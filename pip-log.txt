@@ -1,0 +1,249 @@
+Downloading/unpacking python-twitter
+  Getting page http://pypi.python.org/simple/python-twitter
+  URLs to search for versions for python-twitter:
+  * http://pypi.python.org/simple/python-twitter/
+  Getting page http://code.google.com/p/python-twitter/
+  Analyzing links from page http://pypi.python.org/simple/python-twitter/
+    Found link http://pypi.python.org/packages/source/p/python-twitter/python-twitter-0.4.tar.gz#md5=d2cb8fa12a6053cdb8dc98ac26473e75 (from http://pypi.python.org/simple/python-twitter/), version: 0.4
+    Skipping link http://pypi.python.org/packages/2.4/p/python-twitter/python_twitter-0.5-py2.4.egg#md5=f264d2c65c1d68f42db45a6c418b68f3 (from http://pypi.python.org/simple/python-twitter/); unknown archive format: .egg
+    Skipping link http://pypi.python.org/packages/2.4/p/python-twitter/python_twitter-0.4-py2.4.egg#md5=07b4cd8a9d42d410ebae2f95f61b9268 (from http://pypi.python.org/simple/python-twitter/); unknown archive format: .egg
+    Found link http://pypi.python.org/packages/source/p/python-twitter/python-twitter-0.4.1.tar.gz#md5=843e7399f0f9a10f217c79ab64555821 (from http://pypi.python.org/simple/python-twitter/), version: 0.4.1
+    Found link http://pypi.python.org/packages/source/p/python-twitter/python-twitter-0.5.tar.gz#md5=d4fe92ca630a7339a064cef8e91af2b9 (from http://pypi.python.org/simple/python-twitter/), version: 0.5
+    Skipping link http://pypi.python.org/packages/2.4/p/python-twitter/python_twitter-0.4.1-py2.4.egg#md5=f2dcc3ab8729236200258616a7b31a30 (from http://pypi.python.org/simple/python-twitter/); unknown archive format: .egg
+    Skipping link http://code.google.com/p/python-twitter/ (from http://pypi.python.org/simple/python-twitter/); not a file
+  Analyzing links from page http://code.google.com/p/python-twitter/
+    Skipping link http://www.gstatic.com/codesite/ph/images/phosting.ico (from http://code.google.com/p/python-twitter/); unknown archive format: .ico
+    Skipping link http://www.gstatic.com/codesite/ph/17891623693695439908/css/ph_core.css (from http://code.google.com/p/python-twitter/); unknown archive format: .css
+    Skipping link http://www.gstatic.com/codesite/ph/17891623693695439908/css/ph_detail.css (from http://code.google.com/p/python-twitter/); unknown archive format: .css
+    Skipping link http://www.gstatic.com/codesite/ph/17891623693695439908/css/d_ie.css (from http://code.google.com/p/python-twitter/); unknown archive format: .css
+    Skipping link https://www.google.com/accounts/ServiceLogin?service=code&amp;ltmpl=phosting&amp;continue=http%3A%2F%2Fcode.google.com%2Fp%2Fpython-twitter%2F&amp;followup=http%3A%2F%2Fcode.google.com%2Fp%2Fpython-twitter%2F (from http://code.google.com/p/python-twitter/); not a file
+    Skipping link http://www.firefox.com (from http://code.google.com/p/python-twitter/); not a file
+    Skipping link http://www.google.com/chrome (from http://code.google.com/p/python-twitter/); not a file
+    Skipping link http://code.google.com/p/python-twitter/downloads/list (from http://code.google.com/p/python-twitter/); not a file
+    Skipping link http://code.google.com/p/python-twitter/w/list (from http://code.google.com/p/python-twitter/); not a file
+    Skipping link http://code.google.com/p/python-twitter/issues/list (from http://code.google.com/p/python-twitter/); not a file
+    Skipping link http://code.google.com/p/python-twitter/source/checkout (from http://code.google.com/p/python-twitter/); not a file
+    Skipping link http://code.google.com/p/python-twitter/updates/list (from http://code.google.com/p/python-twitter/); not a file
+    Skipping link http://code.google.com/p/python-twitter/people/list (from http://code.google.com/p/python-twitter/); not a file
+    Skipping link http://www.apache.org/licenses/LICENSE-2.0 (from http://code.google.com/p/python-twitter/); unknown archive format: .0
+    Skipping link http://code.google.com/hosting/search?q=label:python (from http://code.google.com/p/python-twitter/); not a file
+    Skipping link http://code.google.com/hosting/search?q=label:twitter (from http://code.google.com/p/python-twitter/); not a file
+    Skipping link http://code.google.com/hosting/search?q=label:api (from http://code.google.com/p/python-twitter/); not a file
+    Found link http://python-twitter.googlecode.com/files/python-twitter-0.6.tar.gz (from http://code.google.com/p/python-twitter/), version: 0.6
+    Skipping link http://code.google.com/p/python-twitter/feeds (from http://code.google.com/p/python-twitter/); not a file
+    Skipping link http://groups.google.com/group/python-twitter (from http://code.google.com/p/python-twitter/); not a file
+    Skipping link http://groups.google.com/group/twitter-development-talk (from http://code.google.com/p/python-twitter/); not a file
+    Skipping link http://code.google.com/u/dclinton/ (from http://code.google.com/p/python-twitter/); not a file
+    Skipping link http://code.google.com/u/@VBBTRVVZBhNMXQZ0/ (from http://code.google.com/p/python-twitter/); not a file
+    Skipping link http://code.google.com/u/@UBBURF1RBBlMWwh6GA%3D%3D/ (from http://code.google.com/p/python-twitter/); not a file
+    Skipping link http://code.google.com/u/mihai.parparita/ (from http://code.google.com/p/python-twitter/); unknown archive format: .parparita
+    Skipping link http://code.google.com/u/marcmagus/ (from http://code.google.com/p/python-twitter/); not a file
+    Skipping link http://code.google.com/u/hameed.u.khan/ (from http://code.google.com/p/python-twitter/); unknown archive format: .khan
+    Skipping link http://code.google.com/u/cydeweys/ (from http://code.google.com/p/python-twitter/); not a file
+    Skipping link http://code.google.com/u/@VBNSRlRUBxBCWQd7/ (from http://code.google.com/p/python-twitter/); not a file
+    Skipping link http://code.google.com/u/bear42/ (from http://code.google.com/p/python-twitter/); not a file
+    Skipping link http://code.google.com/u/jdwcornell/ (from http://code.google.com/p/python-twitter/); not a file
+    Skipping link http://twitter.com (from http://code.google.com/p/python-twitter/); not a file
+    Skipping link http://twitter.com/help/api (from http://code.google.com/p/python-twitter/); not a file
+    Skipping link http://cheeseshop.python.org/pypi/simplejson (from http://code.google.com/p/python-twitter/); not a file
+    Skipping link http://code.google.com/p/python-twitter/source/ (from http://code.google.com/p/python-twitter/); not a file
+    Skipping link http://static.unto.net/python-twitter/0.6/doc/twitter.html (from http://code.google.com/p/python-twitter/); unknown archive format: .html
+    Skipping link http://code.google.com/projecthosting/terms.html (from http://code.google.com/p/python-twitter/); unknown archive format: .html
+    Skipping link http://www.google.com/privacy.html (from http://code.google.com/p/python-twitter/); unknown archive format: .html
+    Skipping link http://code.google.com/p/support/ (from http://code.google.com/p/python-twitter/); not a file
+    Skipping link http://code.google.com/projecthosting/ (from http://code.google.com/p/python-twitter/); not a file
+  Using version 0.6 (newest of versions: 0.6, 0.5, 0.4.1, 0.4)
+  Downloading from URL http://python-twitter.googlecode.com/files/python-twitter-0.6.tar.gz (from http://code.google.com/p/python-twitter/)
+  Running setup.py egg_info for package python-twitter
+    running egg_info
+    creating pip-egg-info/python_twitter.egg-info
+    writing requirements to pip-egg-info/python_twitter.egg-info/requires.txt
+    writing pip-egg-info/python_twitter.egg-info/PKG-INFO
+    writing top-level names to pip-egg-info/python_twitter.egg-info/top_level.txt
+    writing dependency_links to pip-egg-info/python_twitter.egg-info/dependency_links.txt
+    writing manifest file 'pip-egg-info/python_twitter.egg-info/SOURCES.txt'
+    warning: manifest_maker: standard file '-c' not found
+    reading manifest file 'pip-egg-info/python_twitter.egg-info/SOURCES.txt'
+    writing manifest file 'pip-egg-info/python_twitter.egg-info/SOURCES.txt'
+Requirement already satisfied (use --upgrade to upgrade): setuptools in /home/ewelker/git_repos/col/lib/python2.6/site-packages/setuptools-0.6c9-py2.6.egg (from python-twitter)
+Downloading/unpacking simplejson (from python-twitter)
+  Getting page http://pypi.python.org/simple/simplejson
+  URLs to search for versions for simplejson (from python-twitter):
+  * http://pypi.python.org/simple/simplejson/
+  Getting page http://undefined.org/python/
+  Analyzing links from page http://pypi.python.org/simple/simplejson/
+    Skipping link http://pypi.python.org/packages/2.4/s/simplejson/simplejson-1.7.1-py2.4.egg#md5=dfc717010a6ee597a43f6b57a9768777 (from http://pypi.python.org/simple/simplejson/); unknown archive format: .egg
+    Skipping link http://pypi.python.org/packages/2.4/s/simplejson/simplejson-1.3-py2.4.egg#md5=f2f04b9b5282fc2627dae9e3526906af (from http://pypi.python.org/simple/simplejson/); unknown archive format: .egg
+    Skipping link http://pypi.python.org/packages/2.4/s/simplejson/simplejson-1.7.1-py2.4-macosx-10.3-fat.egg#md5=c8933b5073f0bbeedd61b2de2a567907 (from http://pypi.python.org/simple/simplejson/); unknown archive format: .egg
+    Found link http://pypi.python.org/packages/source/s/simplejson/simplejson-1.6.tar.gz#md5=be3e13943a9627a3cfc012e31db0550b (from http://pypi.python.org/simple/simplejson/), version: 1.6
+    Skipping link http://pypi.python.org/packages/2.4/s/simplejson/simplejson-1.6-py2.4.egg#md5=3f823c551581a98b2974155656063ce1 (from http://pypi.python.org/simple/simplejson/); unknown archive format: .egg
+    Skipping link http://pypi.python.org/packages/2.5/s/simplejson/simplejson-2.0.8.win32-py2.5.exe#md5=5c84c2fee57bc8f9bc8f43fe41169cd3 (from http://pypi.python.org/simple/simplejson/); unknown archive format: .exe
+    Skipping link http://pypi.python.org/packages/2.5/s/simplejson/simplejson-2.0.6-py2.5-linux-i686.egg#md5=8808fba6300f41e51a4a956b77f0331e (from http://pypi.python.org/simple/simplejson/); unknown archive format: .egg
+    Skipping link http://pypi.python.org/packages/2.5/s/simplejson/simplejson-2.0.7.win32-py2.5.exe#md5=f5285850f9f73cac99ecdb0e415ec4fc (from http://pypi.python.org/simple/simplejson/); unknown archive format: .exe
+    Found link http://pypi.python.org/packages/source/s/simplejson/simplejson-2.0.9.tar.gz#md5=af5e67a39ca3408563411d357e6d5e47 (from http://pypi.python.org/simple/simplejson/), version: 2.0.9
+    Skipping link http://pypi.python.org/packages/2.4/s/simplejson/simplejson-1.7-py2.4-linux-i686.egg#md5=f8e2fac9adcdac0fb7601f15ab22e9d2 (from http://pypi.python.org/simple/simplejson/); unknown archive format: .egg
+    Found link http://pypi.python.org/packages/source/s/simplejson/simplejson-1.3.tar.gz#md5=fbe039b9b863572651a0f665acea34c9 (from http://pypi.python.org/simple/simplejson/), version: 1.3
+    Found link http://pypi.python.org/packages/source/s/simplejson/simplejson-2.0.8.tar.gz#md5=29f8a89bcc4d751f4039436ec769807f (from http://pypi.python.org/simple/simplejson/), version: 2.0.8
+    Found link http://pypi.python.org/packages/source/s/simplejson/simplejson-2.0.6.tar.gz#md5=1c200c8d5ba910706bad0618389e9e3c (from http://pypi.python.org/simple/simplejson/), version: 2.0.6
+    Skipping link http://pypi.python.org/packages/2.5/s/simplejson/simplejson-2.0.9-py2.5-win32.egg#md5=6c8e1117f875ecc62b4bcea71d615837 (from http://pypi.python.org/simple/simplejson/); unknown archive format: .egg
+    Found link http://pypi.python.org/packages/source/s/simplejson/simplejson-1.8.1.tar.gz#md5=7d024d6ae74abb269637be204e132bdc (from http://pypi.python.org/simple/simplejson/), version: 1.8.1
+    Found link http://pypi.python.org/packages/source/s/simplejson/simplejson-1.9.tar.gz#md5=8780ac416325d22a59252f7cd9561373 (from http://pypi.python.org/simple/simplejson/), version: 1.9
+    Found link http://pypi.python.org/packages/source/s/simplejson/simplejson-2.1.0.tar.gz#md5=3ea565fd1216462162c6929b264cf365 (from http://pypi.python.org/simple/simplejson/), version: 2.1.0
+    Found link http://pypi.python.org/packages/source/s/simplejson/simplejson-1.7.1.tar.gz#md5=b723d488ea43583122511263e9c2c93a (from http://pypi.python.org/simple/simplejson/), version: 1.7.1
+    Found link http://pypi.python.org/packages/source/s/simplejson/simplejson-2.0.7.tar.gz#md5=9d02273f8615b8e3fceda891ffff10d1 (from http://pypi.python.org/simple/simplejson/), version: 2.0.7
+    Found link http://pypi.python.org/packages/source/s/simplejson/simplejson-2.0.5.tar.gz#md5=11e65b91e7fd08eda931e683c5f98543 (from http://pypi.python.org/simple/simplejson/), version: 2.0.5
+    Found link http://pypi.python.org/packages/source/s/simplejson/simplejson-1.7.2.tar.gz#md5=733ebc212e91b60b3b47039a5343c133 (from http://pypi.python.org/simple/simplejson/), version: 1.7.2
+    Skipping link http://pypi.python.org/packages/2.3/s/simplejson/simplejson-1.1-py2.3.egg#md5=4a27d6644ba6a44bf82d5ef438b92d8a (from http://pypi.python.org/simple/simplejson/); unknown archive format: .egg
+    Skipping link http://pypi.python.org/packages/2.5/s/simplejson/simplejson-1.7-py2.5.egg#md5=48275afc9a7a5612ae862c62e8352c36 (from http://pypi.python.org/simple/simplejson/); unknown archive format: .egg
+    Skipping link http://pypi.python.org/packages/2.5/s/simplejson/simplejson-2.0.5-py2.5-win32.egg#md5=088c2c2cd564c7029560fb3bb427822d (from http://pypi.python.org/simple/simplejson/); unknown archive format: .egg
+    Skipping link http://pypi.python.org/packages/2.5/s/simplejson/simplejson-2.0.6-py2.5-win32.egg#md5=b7ef62af279bdbd9783db43a13775ba6 (from http://pypi.python.org/simple/simplejson/); unknown archive format: .egg
+    Found link http://pypi.python.org/packages/source/s/simplejson/simplejson-2.0.2.tar.gz#md5=4dda296391c71ce60a0a6294192a2f37 (from http://pypi.python.org/simple/simplejson/), version: 2.0.2
+    Skipping link http://pypi.python.org/packages/2.5/s/simplejson/simplejson-1.7-py2.5-macosx-10.3-fat.egg#md5=6396c696770eab9c523eb60d490410c6 (from http://pypi.python.org/simple/simplejson/); unknown archive format: .egg
+    Found link http://pypi.python.org/packages/source/s/simplejson/simplejson-1.8.tar.gz#md5=7aa92cf4a81973c7087023cafeaddb18 (from http://pypi.python.org/simple/simplejson/), version: 1.8
+    Found link http://pypi.python.org/packages/source/s/simplejson/simplejson-2.0.0.tar.gz#md5=6a7aea9ecdf5180557ea91027ee2638f (from http://pypi.python.org/simple/simplejson/), version: 2.0.0
+    Skipping link http://pypi.python.org/packages/2.4/s/simplejson/simplejson-1.7-py2.4-freebsd-6.1-RELEASE-p3-i386.egg#md5=ad00231eb03eb08f28e61a319ffc38ac (from http://pypi.python.org/simple/simplejson/); unknown archive format: .egg
+    Found link http://pypi.python.org/packages/source/s/simplejson/simplejson-2.0.1.tar.gz#md5=ee2d74d695dc63d188fc3d3c6aa0d90a (from http://pypi.python.org/simple/simplejson/), version: 2.0.1
+    Skipping link http://pypi.python.org/packages/2.5/s/simplejson/simplejson-1.7.1-py2.5.egg#md5=8a2e4e556c8110506e24f125c362f944 (from http://pypi.python.org/simple/simplejson/); unknown archive format: .egg
+    Found link http://pypi.python.org/packages/source/s/simplejson/simplejson-2.0.3.tar.gz#md5=6da5d665c9e772ac65eae9b4ce6d737b (from http://pypi.python.org/simple/simplejson/), version: 2.0.3
+    Skipping link http://pypi.python.org/packages/2.4/s/simplejson/simplejson-1.7-py2.4.egg#md5=57715b70f546752fc5e7040b8cb70f6e (from http://pypi.python.org/simple/simplejson/); unknown archive format: .egg
+    Skipping link http://pypi.python.org/packages/2.5/s/simplejson/simplejson-1.7.2-py2.5-macosx-10.3-fat.egg#md5=1990127f3681225dae91237610cb3b38 (from http://pypi.python.org/simple/simplejson/); unknown archive format: .egg
+    Found link http://pypi.python.org/packages/source/s/simplejson/simplejson-1.7.tar.gz#md5=1e8866f758ef8e7d5fe6ebeb1b26e4eb (from http://pypi.python.org/simple/simplejson/), version: 1.7
+    Skipping link http://pypi.python.org/packages/2.5/s/simplejson/simplejson-2.0.7-py2.5-win32.egg#md5=988b06121977a6dc69df30cfda925d13 (from http://pypi.python.org/simple/simplejson/); unknown archive format: .egg
+    Found link http://pypi.python.org/packages/source/s/simplejson/simplejson-1.7.3.tar.gz#md5=03935eda1211f29d6856481baf6cba59 (from http://pypi.python.org/simple/simplejson/), version: 1.7.3
+    Skipping link http://pypi.python.org/packages/2.4/s/simplejson/simplejson-1.4-py2.4.egg#md5=4f18e31fd095cd54e5015e7b7a147093 (from http://pypi.python.org/simple/simplejson/); unknown archive format: .egg
+    Skipping link http://pypi.python.org/packages/2.5/s/simplejson/simplejson-1.7.1-py2.5-macosx-10.3-fat.egg#md5=318ddfca6d052f0c703cfd1e9725792c (from http://pypi.python.org/simple/simplejson/); unknown archive format: .egg
+    Found link http://pypi.python.org/packages/source/s/simplejson/simplejson-1.9.3.tar.gz#md5=321f7ad3a347e5a11814bcfecf8b9d11 (from http://pypi.python.org/simple/simplejson/), version: 1.9.3
+    Skipping link http://pypi.python.org/packages/2.4/s/simplejson/simplejson-1.1-py2.4.egg#md5=af24eddbfe7b8ac79d582d66d8ac6120 (from http://pypi.python.org/simple/simplejson/); unknown archive format: .egg
+    Found link http://pypi.python.org/packages/source/s/simplejson/simplejson-2.0.4.tar.gz#md5=9a888ea017ef2fcd42a2823454950b16 (from http://pypi.python.org/simple/simplejson/), version: 2.0.4
+    Found link http://pypi.python.org/packages/source/s/simplejson/simplejson-1.9.2.tar.gz#md5=9fe5d9a98da5ffc347bfee2ccf386fcb (from http://pypi.python.org/simple/simplejson/), version: 1.9.2
+    Found link http://pypi.python.org/packages/source/s/simplejson/simplejson-1.4.tar.gz#md5=5fbad786a4b151d44a9b1e1e157e5510 (from http://pypi.python.org/simple/simplejson/), version: 1.4
+    Found link http://pypi.python.org/packages/source/s/simplejson/simplejson-1.9.1.tar.gz#md5=d2ee608bdf6397b82a7cd53c8602b29e (from http://pypi.python.org/simple/simplejson/), version: 1.9.1
+    Skipping link http://pypi.python.org/packages/2.4/s/simplejson/simplejson-1.5-py2.4.egg#md5=ce2b5596a41bff29620971cf419a0b06 (from http://pypi.python.org/simple/simplejson/); unknown archive format: .egg
+    Found link http://pypi.python.org/packages/source/s/simplejson/simplejson-1.1.tar.gz#md5=e7f6899d5a7a389335adb870f9ffa5a4 (from http://pypi.python.org/simple/simplejson/), version: 1.1
+    Skipping link http://pypi.python.org/packages/2.4/s/simplejson/simplejson-1.7-py2.4-macosx-10.3-fat.egg#md5=0b5beb7cb7b0b8ec86971db84e721dae (from http://pypi.python.org/simple/simplejson/); unknown archive format: .egg
+    Skipping link http://pypi.python.org/packages/2.4/s/simplejson/simplejson-1.7-py2.4-freebsd-6.2-RELEASE-p3-i386.egg#md5=57cfb485618fba0037e1d2c14a11c2a1 (from http://pypi.python.org/simple/simplejson/); unknown archive format: .egg
+    Found link http://pypi.python.org/packages/source/s/simplejson/simplejson-1.5.tar.gz#md5=16e579c1230e7a0469f9e46b57fb53df (from http://pypi.python.org/simple/simplejson/), version: 1.5
+    Skipping link http://pypi.python.org/packages/2.5/s/simplejson/simplejson-1.7.3-py2.5-macosx-10.3-fat.egg#md5=70fff32f30c14e27be7352d2969a58e2 (from http://pypi.python.org/simple/simplejson/); unknown archive format: .egg
+    Found link http://pypi.python.org/packages/source/s/simplejson/simplejson-1.7.4.tar.gz#md5=0395956395d22657c333a1de57dce2d3 (from http://pypi.python.org/simple/simplejson/), version: 1.7.4
+    Skipping link http://pypi.python.org/packages/2.5/s/simplejson/simplejson-2.0.8-py2.5-win32.egg#md5=dde32f26d7561de7562cdb93073a0716 (from http://pypi.python.org/simple/simplejson/); unknown archive format: .egg
+    Found link http://pypi.python.org/packages/source/s/simplejson/simplejson-1.7.5.tar.gz#md5=649e1095b2600fc57ac34fbde8a88348 (from http://pypi.python.org/simple/simplejson/), version: 1.7.5
+    Skipping link http://undefined.org/python/#simplejson (from http://pypi.python.org/simple/simplejson/); not a file
+    Skipping link http://json.org (from http://pypi.python.org/simple/simplejson/); not a file
+  Analyzing links from page http://undefined.org/python/
+    Skipping link http://undefined.org/python/css/generic.css (from http://undefined.org/python/); unknown archive format: .css
+    Skipping link http://simplejson.googlecode.com/svn/tags/simplejson-2.1.0/docs/index.html (from http://undefined.org/python/); unknown archive format: .html
+    Skipping link http://simplejson.googlecode.com/svn/trunk/ (from http://undefined.org/python/); not a file
+    Skipping link http://simplejson.googlecode.com/svn/tags/simplejson-2.1.0/ (from http://undefined.org/python/); unknown archive format: .0
+    Skipping link http://code.google.com/p/simplejson/ (from http://undefined.org/python/); not a file
+    Skipping link http://pypi.python.org/pypi/simplejson (from http://undefined.org/python/); not a file
+    Skipping link http://svn.pythonmac.org/py2app/py2app/trunk/doc/index.html (from http://undefined.org/python/); unknown archive format: .html
+    Skipping link http://pypi.python.org/pypi/py2app/ (from http://undefined.org/python/); not a file
+    Skipping link http://pythonmac.org/wiki/py2app (from http://undefined.org/python/); not a file
+    Skipping link http://starship.python.net/crew/theller/py2exe/ (from http://undefined.org/python/); not a file
+    Skipping link http://starship.python.net/crew/atuining/cx_Freeze/ (from http://undefined.org/python/); not a file
+    Skipping link http://peak.telecommunity.com/DevCenter/setuptools (from http://undefined.org/python/); not a file
+    Skipping link http://www.python.org/doc/current/dist/ (from http://undefined.org/python/); not a file
+    Skipping link http://pypi.python.org/pypi/bdist_mpkg/ (from http://undefined.org/python/); not a file
+    Skipping link http://pythonmac.org/wiki/bdist_mpkg (from http://undefined.org/python/); not a file
+    Skipping link http://pypi.python.org/pypi/modulegraph/ (from http://undefined.org/python/); not a file
+    Skipping link http://pythonmac.org/wiki/modulegraph (from http://undefined.org/python/); not a file
+    Skipping link http://pypi.python.org/pypi/macholib/ (from http://undefined.org/python/); not a file
+    Skipping link http://pythonmac.org/wiki/macholib (from http://undefined.org/python/); not a file
+    Skipping link http://pypi.python.org/pypi/altgraph/ (from http://undefined.org/python/); not a file
+    Skipping link http://pythonmac.org/wiki/altgraph (from http://undefined.org/python/); not a file
+    Skipping link http://pythonmac.org/packages/ (from http://undefined.org/python/); not a file
+    Skipping link http://pypi.python.org/pypi/greenlet (from http://undefined.org/python/); not a file
+    Skipping link http://codespeak.net/py/ (from http://undefined.org/python/); not a file
+    Skipping link http://codespeak.net/py/0.9.2/greenlet.html (from http://undefined.org/python/); unknown archive format: .html
+    Skipping link http://pypi.python.org/pypi/flashticle (from http://undefined.org/python/); not a file
+    Skipping link http://osflash.org/flashticle (from http://undefined.org/python/); not a file
+    Skipping link http://turbogears.org (from http://undefined.org/python/); not a file
+    Skipping link http://cherrypy.org (from http://undefined.org/python/); not a file
+    Skipping link http://bob.pythonmac.org/archives/2005/10/08/xattr-python-extended-filesystem-attributes/ (from http://undefined.org/python/); not a file
+    Skipping link http://www.python.org (from http://undefined.org/python/); not a file
+    Skipping link http://pypi.python.org/pypi/xattr (from http://undefined.org/python/); not a file
+    Skipping link http://pythonmac.org/ (from http://undefined.org/python/); not a file
+    Skipping link http://pythonmac.org/wiki (from http://undefined.org/python/); not a file
+    Skipping link http://undefined.org/python/SystemConfiguration-0.3.tar.gz (from http://undefined.org/python/); wrong project name (not simplejson)
+    Skipping link http://pythonmac.org/wiki/SystemConfiguration (from http://undefined.org/python/); not a file
+    Skipping link http://mail.python.org/pipermail/pythonmac-sig/2003-October/009127.html (from http://undefined.org/python/); unknown archive format: .html
+    Skipping link http://developer.apple.com/documentation/Networking/Reference/SysConfig/sysconfig_fw.html (from http://undefined.org/python/); unknown archive format: .html
+    Skipping link http://developer.apple.com/samplecode/Sample_Code/Networking/MoreSCF.htm (from http://undefined.org/python/); unknown archive format: .htm
+    Skipping link http://developer.apple.com/qa/qa2001/qa1234.html (from http://undefined.org/python/); unknown archive format: .html
+    Skipping link http://undefined.org/python/PyQTSequence.app-0.1.tgz (from http://undefined.org/python/); wrong project name (not simplejson)
+    Skipping link http://undefined.org/python/PyQTSequence-0.1.tgz (from http://undefined.org/python/); wrong project name (not simplejson)
+    Skipping link http://developer.apple.com/quicktime/ (from http://undefined.org/python/); not a file
+    Skipping link http://www.pythonware.com/products/pil/index.htm (from http://undefined.org/python/); unknown archive format: .htm
+    Skipping link http://www.pfdubois.com/numpy/ (from http://undefined.org/python/); not a file
+    Skipping link http://pyobjc.sourceforge.net/ (from http://undefined.org/python/); not a file
+    Skipping link http://undefined.org/python/Authorization-0.1.tar.gz (from http://undefined.org/python/); wrong project name (not simplejson)
+    Skipping link http://pythonmac.org/wiki/Authorization (from http://undefined.org/python/); not a file
+    Skipping link http://undefined.org/python/Authorization_doc.html (from http://undefined.org/python/); unknown archive format: .html
+    Skipping link http://mail.python.org/pipermail/pythonmac-sig/2003-October/009015.html (from http://undefined.org/python/); unknown archive format: .html
+    Skipping link http://developer.apple.com/documentation/Security/Reference/authorization_ref/ (from http://undefined.org/python/); not a file
+    Skipping link http://developer.apple.com/documentation/Security/Conceptual/authorization_concepts/index.html (from http://undefined.org/python/); unknown archive format: .html
+    Skipping link http://undefined.org/python/aeve-0.0.4.tar.gz (from http://undefined.org/python/); wrong project name (not simplejson)
+    Skipping link http://pythonmac.org/wiki/aeve (from http://undefined.org/python/); not a file
+    Skipping link http://aspn.activestate.com/ASPN/Mail/Message/pythonmac-sig/1746711 (from http://undefined.org/python/); not a file
+    Skipping link http://developer.apple.com/documentation/mac/IAC/IAC-2.html (from http://undefined.org/python/); unknown archive format: .html
+    Skipping link http://developer.apple.com/documentation/AppleScript/Conceptual/AppleScriptLangGuide/index.html (from http://undefined.org/python/); unknown archive format: .html
+    Skipping link http://maccentral.macworld.com/features/applescriptprimer16/ (from http://undefined.org/python/); not a file
+    Skipping link http://undefined.org/python/TECManager-0.2.tar.gz (from http://undefined.org/python/); wrong project name (not simplejson)
+    Skipping link http://undefined.org/python/TECManager-0.2-pydoc.html (from http://undefined.org/python/); unknown archive format: .html
+    Skipping link http://aspn.activestate.com/ASPN/Mail/Message/pythonmac-sig/1795643 (from http://undefined.org/python/); not a file
+    Skipping link http://developer.apple.com/documentation/Carbon/Reference/Text_Encodin_sion_Manager/ (from http://undefined.org/python/); not a file
+    Skipping link http://developer.apple.com/documentation/Carbon/Conceptual/ProgWithTECM/ (from http://undefined.org/python/); not a file
+    Skipping link http://undefined.org/python/LaunchServices-0.1.tar.gz (from http://undefined.org/python/); wrong project name (not simplejson)
+    Skipping link http://undefined.org/python/LaunchServices-0.1-pydoc.html (from http://undefined.org/python/); unknown archive format: .html
+    Skipping link http://aspn.activestate.com/ASPN/Mail/Message/pythonmac-sig/1783354 (from http://undefined.org/python/); not a file
+    Skipping link http://developer.apple.com/technotes/tn/tn2017.html (from http://undefined.org/python/); unknown archive format: .html
+    Skipping link http://developer.apple.com/samplecode/Sample_Code/Processes/SignatureToApp.htm (from http://undefined.org/python/); unknown archive format: .htm
+    Skipping link http://developer.apple.com/carbon/tipsandtricks.html (from http://undefined.org/python/); unknown archive format: .html
+    Could not parse version from link: http://undefined.org/python/twisted_gzstream.tgz (from http://undefined.org/python/)
+    Skipping link http://undefined.org/python/twisted_gzstream.tgz (from http://undefined.org/python/); wrong project name (not simplejson)
+    Skipping link http://www.gzip.org/zlib/ (from http://undefined.org/python/); not a file
+    Skipping link http://www.python.org/doc/current/lib/module-zlib.html (from http://undefined.org/python/); unknown archive format: .html
+    Skipping link http://www.twistedmatrix.com/ (from http://undefined.org/python/); not a file
+    Skipping link http://svn.pythonmac.org/py2app/py2app/trunk#egg=py2app-dev (from http://undefined.org/python/); wrong project name (not simplejson)
+    Skipping link http://svn.pythonmac.org/bdist_mpkg/bdist_mpkg/trunk#egg=bdist_mpkg-dev (from http://undefined.org/python/); wrong project name (not simplejson)
+    Skipping link http://svn.pythonmac.org/modulegraph/modulegraph/trunk#egg=modulegraph-dev (from http://undefined.org/python/); wrong project name (not simplejson)
+    Skipping link http://svn.pythonmac.org/macholib/macholib/trunk#egg=macholib-dev (from http://undefined.org/python/); wrong project name (not simplejson)
+    Skipping link http://svn.pythonmac.org/altgraph/altgraph/trunk#egg=altgraph-dev (from http://undefined.org/python/); wrong project name (not simplejson)
+    Skipping link http://svn.red-bean.com/bob/greenlet/trunk/#egg=greenlet-dev (from http://undefined.org/python/); wrong project name (not simplejson)
+    Skipping link http://svn.red-bean.com/bob/flashticle/trunk/#egg=flashticle-dev (from http://undefined.org/python/); wrong project name (not simplejson)
+    Skipping link http://svn.red-bean.com/bob/xattr/trunk/#egg=xattr-dev (from http://undefined.org/python/); wrong project name (not simplejson)
+    Skipping link http://svn.red-bean.com/bob/xattr/releases/xattr-0.4/#egg=xattr-0.4 (from http://undefined.org/python/); wrong project name (not simplejson)
+  Using version 2.1.0 (newest of versions: 2.1.0, 2.0.9, 2.0.8, 2.0.7, 2.0.6, 2.0.5, 2.0.4, 2.0.3, 2.0.2, 2.0.1, 2.0.0, 1.9.3, 1.9.2, 1.9.1, 1.9, 1.8.1, 1.8, 1.7.5, 1.7.4, 1.7.3, 1.7.2, 1.7.1, 1.7, 1.6, 1.5, 1.4, 1.3, 1.1)
+  Downloading from URL http://pypi.python.org/packages/source/s/simplejson/simplejson-2.1.0.tar.gz#md5=3ea565fd1216462162c6929b264cf365 (from http://pypi.python.org/simple/simplejson/)
+  Running setup.py egg_info for package simplejson
+    The required version of setuptools (>=0.6c11) is not available, and
+    can't be installed while this script is running. Please install
+     a more recent version first, using 'easy_install -U setuptools'.
+    
+    (Currently using setuptools 0.6c9 (/home/ewelker/git_repos/col/lib/python2.6/site-packages/setuptools-0.6c9-py2.6.egg))
+    Complete output from command python setup.py egg_info:
+    The required version of setuptools (>=0.6c11) is not available, and
+
+can't be installed while this script is running. Please install
+
+ a more recent version first, using 'easy_install -U setuptools'.
+
+
+
+(Currently using setuptools 0.6c9 (/home/ewelker/git_repos/col/lib/python2.6/site-packages/setuptools-0.6c9-py2.6.egg))
+
+----------------------------------------
+Command python setup.py egg_info failed with error code 2
+Exception information:
+Traceback (most recent call last):
+  File "/home/ewelker/git_repos/col/lib/python2.6/site-packages/pip-0.6.3-py2.6.egg/pip/basecommand.py", line 115, in main
+    self.run(options, args)
+  File "/home/ewelker/git_repos/col/lib/python2.6/site-packages/pip-0.6.3-py2.6.egg/pip/commands/install.py", line 155, in run
+    requirement_set.install_files(finder, force_root_egg_info=self.bundle, bundle=self.bundle)
+  File "/home/ewelker/git_repos/col/lib/python2.6/site-packages/pip-0.6.3-py2.6.egg/pip/req.py", line 854, in install_files
+    req_to_install.run_egg_info()
+  File "/home/ewelker/git_repos/col/lib/python2.6/site-packages/pip-0.6.3-py2.6.egg/pip/req.py", line 205, in run_egg_info
+    command_desc='python setup.py egg_info')
+  File "/home/ewelker/git_repos/col/lib/python2.6/site-packages/pip-0.6.3-py2.6.egg/pip/__init__.py", line 207, in call_subprocess
+    % (command_desc, proc.returncode))
+InstallationError: Command python setup.py egg_info failed with error code 2

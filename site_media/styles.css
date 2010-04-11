@@ -1,0 +1,84 @@
+body { margin:0;padding:0;background-color:#333; font: 62.5%/1.4 arial, sans-serif; }
+.description h2, .description div, .main h2, .subpage h1 { font-family: Georgia, Cambria, "Times New Roman", Times, serif; }
+
+.content { width: 75%; }
+div.subpage { padding: 20px; }
+.content p { font-size: 1.4em; }
+.content h1 { font-size: 2.4em; /*background-color: #fbbf13; display: inline; padding: .2em 1em; -moz-box-shadow: 2px 2px 8px rgba(0,0,0,.5); -webkit-box-shadow: 5px 8px 8px rgba(0,0,0,.5); box-shadow: 5px 8px 8px rgba(0,0,0,.5); position: relative; top: -.25em; left: .5em; */ }
+.content h3 { font-size: 1.6em; font-weight: bold; }
+
+
+.offscreen { text-indent: -9999em; }
+.noborder { border: none; }
+
+.header, .main, .next_concert, .footer , .navwrap{ width: 1000px; margin:0 auto; padding: 0 20px; }
+
+.header_bg { height: 127px; background: transparent url(headerbg.png) repeat-x 0 0; }
+.header h1, .description h2, .footer h2.footerlogo { margin-top:0;}
+.header a { text-decoration: none; background: transparent url("logo.png") no-repeat 0 0; display: block; width: 343px; height: 98px; position: relative; top: 15px; }
+.header { position: relative; }
+
+.search_area { position: absolute; right: 20px; top: 7.5em; }
+.search_area input, .search_area button { height: 2em; border: 0; margin:0; }
+.search_area  input { background-color: #c1cfcf; -moz-border-radius: 4px 0 0 4px; width: 13em;}
+.search_area button { background: transparent url(searchbg.png) repeat-x 0 0; -moz-border-radius: 0 4px 4px 0; height: 2.15em; position: relative; left: -.2em; top: .1em; color: #fff; font-weight:bold;}
+
+.nav { background-color: #333; height: 46px;  text-align: center; }
+.nav ul { margin:0;padding:0;list-style-type:none; position: relative; top: 12px; overflow:visible; }
+.nav ul li { display: inline;  margin-right: 40px; float: left;}
+.nav ul ul  { display: none; position: absolute; background-color:#333; display:block; top:1.7em; padding-top:1.3em;} 
+.nav ul li a { color: #fff;  text-transform: uppercase; text-decoration: none; font-size: 1.5em;}
+.nav ul ul li { display: block; float: none; z-index: 10; margin: .3em 0; }
+.nav ul ul li a { padding: .3em 1em; }
+.nav ul ul li a:hover { /* need IE background-color */ background-color: rgba(255,255,255,.4);/*text-shadow: 3px 3px 6px rgba(255,255,255,.7);*/ }
+.nav ul ul.menu_concerts { left: .7em; }
+.nav ul ul.menu_behind { left: 16em; }
+.nav ul ul.menu_support { left: 36.4em; }
+.nav ul ul.menu_about { left: 47em; }
+
+.next_bg { background-color: #be9521; margin-bottom: 4em; }
+.next_concert { background-color: #fbbf13; position: relative; top: 15px; -moz-box-shadow: 5px 8px 8px #111; -webkit-box-shadow: 5px 8px 8px #111; box-shadow: 5px 8px 8px #111; overflow: auto; padding: 20px; }
+.image img { width: 460px; border: 10px solid white; -moz-border-radius: 0px; -moz-box-shadow: 4px 4px 8px rgba(0,0,0,.5); float: left;}
+.next_concert .description { float: right; width: 490px; }
+
+
+.description h2 { font-size: 3em; text-shadow: 3px 3px 6px rgba(0,0,0,.4); margin-bottom: .4666em; padding-bottom: .4666em; border-bottom: 1px solid #9d7a17; border-bottom: 1px solid rgba(0,0,0,.3) }
+.description div { font-size: 1.8em; }
+.description div.conductor { font-style: italic; }
+.description p { font-size: 1.4em; }
+.description p.tickets { font-size: 1.2em; padding-top: 1.2em; border-top: 1px solid #9d7a17; border-top: 1px solid rgba(0,0,0,.3) }
+
+.col p, .col ul li a { font-size: 1.4em; }
+
+
+.main { background-color: #fff; margin: 0 auto; border: 1px #efefef; overflow: auto; }
+.col { margin-right: 2%; width: 23.5%; float: left; }
+.twocol { width: 49%; margin-right: 2%; float: left; }
+.twocol .col { margin-right: 4%; width: 48%; float: left; }
+.twocol div.last, div.last  { margin:0;}
+.main  h2 { color: #054f49; text-transform: uppercase; font-size: 1.8em; font-weight: normal; border-bottom: 1px solid #ccc; padding-bottom: .4em; }
+.main h2 a { color: #054f49; text-decoration: none;  padding-top: .2em; }
+.main h2 a:hover { border-bottom: 1px dotted #054f49; }
+.main .member { font-size: 1.6em; font-weight: bold; margin-top:-.25em;}
+ 
+.main  .social { padding-left: 2em; text-transform: capitalize; margin-bottom: .5em; }
+.facebook { background: transparent url(facebook.png) no-repeat 0 0; }
+.twitter { background: transparent url(twitter.png) no-repeat 0 0; }
+.youtube { background: transparent url(youtube.png) no-repeat 0 0; }
+.flickr { background: transparent url(flickr.png) no-repeat 0 0; }
+
+
+
+.footer { background: #054f49 url(footerbg.png) repeat-x 0 100%; margin: 0 auto; overflow: auto; margin-top: 2em; border: 1px solid #16584c;}
+.footer .col { color: white; }
+.footer span.offscreen { background: transparent url(footlogo.png) no-repeat 0 0; display: block; width: 241px; height: 71px; margin-top: 1em;  }
+.footer ul { margin:1em 0 0 0;padding:0;list-style-type:none;}
+.footer ul li a { color: #fff; text-decoration: none; border-bottom: 1px dotted #fff; }
+.footer h3 { font-size: 1.4em; margin-top: .7142em; }
+
+
+
+.gsc-branding { display: none !important; }
+div.resultDiv_gsvb { border: 0 !important; height: auto !important; width: auto !important; }
+.resultDiv_gsvb img { width: 120px !important; height: 90px !important; }
+.resultTable_gsvb { text-align: left !important; }

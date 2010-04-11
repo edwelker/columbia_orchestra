@@ -1,0 +1,15 @@
+<script type="text/javascript">
+
+jQuery(document).ready(function() {
+    $(".navwrap ul > li > ul").hide(); 
+
+    $(".navwrap ul > li").hover(
+        function () {
+        $(this).children("ul").show();
+        },function(){
+        $(this).children("ul").hide();
+    });//hover
+
+});
+
+</script>

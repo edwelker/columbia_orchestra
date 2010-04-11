@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="eng">
+<head>
+	<title>Columbia Orchestra</title>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" href="/site_media/styles.css"/>
+	<script type="text/javascript" src="/site_media/jquery-1.4.2.min.js"></script>
+
+	{% include "menu_js.html" %}
+</head>
+<body>
+	{% include "header.html" %}
+	
+    {% include "nav.html" %}
+		
+	<div class="main subpage">
+		<div class="content">
+			{% block content %}
+			{% endblock %}
+		</div>
+	</div>
+	
+    {% include "footer.html" %}
+</body>
+</html>

@@ -1,0 +1,11 @@
+{% extends "mockup2.html" %}
+
+{% block content %}
+	<h2>Meet The Orchestra</h2>
+	<p>Orchestra Members</p>
+	<ul>
+	{% for m in members %}
+	    <li><a href="/members/{{ m.id }}/">{{ m.first_name }} {{m.last_name}}, {{m.get_instrument_display}}</a></li>
+	{% endfor %} 
+	</ul>
+{% endblock %}

@@ -1,7 +1,0 @@
-<h2>Meet The Orchestra</h2>
-<p>Orchestra Members</p>
-<ul>
-{% for m in members %}
-    <li><a href="/members/{{ m.id }}/">{{ m.first_name }}</a></li>
-{% endfor %} 
-</ul>
