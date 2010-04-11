@@ -2,30 +2,25 @@
 
 {% block member %}
             <div class="col">
-                <img src="{{member.photo.url}}"/>
-                <!-- <img src="jason.png"/> -->
+                <img src="{{member.photo.url}}" alt="{{member.first_name}} {{member.last_name}}, {{member.get_instrument_display}}"/>
             </div>
             <div class="col last">
                 <p class="member">{{ member.first_name }} {{member.last_name}}, <span>{{member.get_instrument_display}}</span></p>
-                <!-- <p class="member">Jason Love, <span>Music Director</span></p> -->
-                <p>Praised for his "intelligent and innovative programming," Jason Love has brought his inspiring demeanor and enormous energy to several of Maryland's great cultural institutions. Under his leadership, the Baltimore Sun has called The Columbia Orchestra "Howard County's premier ensemble for instrumental music," noting that "Love has the musicians playing not only with verve and passion, but with an awareness to enter into the emotional core of the works they perform."</p>
-
-                <p>Love's twelve-year tenure as Artistic Director and Conductor of the Greater Baltimore Youth Orchestra Association was marked by continuous growth in the success and prestige of this organizat...</p>
-                <p><a href="#">Read More...</a></p>
+                {{ member.bio }}
+                <p><a href="{{ member.url }}">Read More...</a></p>
             </div>
 {% endblock %}
 
 {% block concert %}
             <div class="image">
-                <img src="photo.png"/>
+                <img src="{{event.image.url}}" alt="Event promo image"/>
             </div>
             <div class="description">
-                <h2>Young People's Concert</h2>
-                <div>Saturday, January 9, 2010</div>
-                <div>12:30pm & 3:00pm, Jim Rouse Theater</div>
+                <h2>{{event.name}}</h2>
+                <div>{{ event.date|date:"l, F jS Y" }}</div>
+                <div>{{ event.date|date:"g:i a" }}, {{event.location}}</div>
                 <div class="conductor">Jason Love, conductor</div>
-                <p>One of our most popular events! Narrated tales including Dr. Seuss's Gerald McBoing Boing and Casey at the Bat teach children about the instruments of the orchestra and more. Choose either the 12:30 or 3:00 concert and try your hand at playing one of the instruments from the concert at our Musical Instrument Petting Zoo, sponsored by our friends at Music & Arts.</p>
-
+                {{ event.description|safe }}
 <p class="tickets">For advance tickets, please visit our Tickets page. Tickets will also be available at the door. <em>We are not equipped to process credit cards at the door; we are happy to accept cash or personal checks.</em></p>
                 </div>
             </div>

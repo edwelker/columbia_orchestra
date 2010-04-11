@@ -25,7 +25,7 @@ TWITTER_TIMEOUT = 3600
 # although not all choices may be available on all operating systems.
 # If running in a Windows environment this must be set to the same as your
 # system time zone.
-TIME_ZONE = 'America/Boston'
+TIME_ZONE = 'America/New_York'
 
 # Language code for this installation. All choices can be found here:
 # http://www.i18nguy.com/unicode/language-identifiers.html
@@ -86,6 +86,7 @@ INSTALLED_APPS = (
     'django.contrib.admin',
     'django.contrib.flatpages',
     'orch.meet_the_orchestra',
+    'orch.homepage',
 )
 
 from django.conf.global_settings import TEMPLATE_CONTEXT_PROCESSORS
