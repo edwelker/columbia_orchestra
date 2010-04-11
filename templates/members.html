@@ -15,10 +15,11 @@ Meet the Orchestra
 	   <ul>
 	       
 	       <li>
-	           {{m.first_name}} {{m.middle_name}} {{m.last_name}}
+	           <a href="{{m.get_absolute_url}}">{{m.first_name}} {{m.middle_name}} {{m.last_name}}
 	           {% if m.principal %}
 	               , Principal
 	           {% endif %}
+	           </a>
 	       </li>
 	       
 	   </ul>

@@ -8,7 +8,7 @@ div.subpage { padding: 20px; }
 .content h3 { font-size: 1.6em; font-weight: bold; }
 .member_detail img { float: left; margin: 0 2em 2em 0; }
 .member_detail p:nth-of-type(1):first-letter{ font-size: 2em; font-weight: bold; line-height: .6; }
-.member_list ul { list-style-type: none; }
+.member_list ul { list-style-type: none; font-size: 1.2em; }
 
 .offscreen { text-indent: -9999em; }
 .noborder { border: none; }
