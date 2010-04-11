@@ -12,6 +12,7 @@
 {% endblock %}
 
 {% block concert %}
+    {% if event.date %}
             <div class="image">
                 <img src="{{event.image.url}}" alt="Event promo image"/>
             </div>
@@ -24,4 +25,7 @@
 <p class="tickets">For advance tickets, please visit our Tickets page. Tickets will also be available at the door. <em>We are not equipped to process credit cards at the door; we are happy to accept cash or personal checks.</em></p>
                 </div>
             </div>
+    {% else %}
+        <p>No events found. Please add an event.</p>
+    {% endif %}
 {% endblock %}
