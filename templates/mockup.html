@@ -6,11 +6,11 @@
     <link rel="stylesheet" href="/site_media/styles.css"/>
     <script type="text/javascript" src="/site_media/jquery-1.4.2.min.js"></script>
 
-    {% include "menu_js.html" %}
+    {% include "inc/menu_js.html" %}
 </head>
 <body>
-	{% include "header.html" %}
-    {% include "nav.html" %}
+	{% include "inc/header.html" %}
+    {% include "inc/nav.html" %}
 	<div class="next_bg">
 		<div class="next_concert">
             {% block concert %}{% endblock %}
@@ -37,12 +37,12 @@
 		<div class="col last">
 			<h2><a class="social youtube" href="http://www.youtube.com/user/colorch/">Youtube</a></h2>
 
-            {% include "youtube.html" %}
+            {% include "inc/youtube.html" %}
                 
 		</div>
 
 	</div>
 	
-	{% include "footer.html" %}
+	{% include "inc/footer.html" %}
 </body>
 </html>
