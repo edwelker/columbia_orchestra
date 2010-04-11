@@ -1,5 +1,15 @@
 {% extends "mockup2.html" %}
 
+{% block title %}
+{{member.first_name}} {{member.last_name}}, {{member.get_instrument_display}}
+{% endblock %}
+
 {% block content %}
-	<h2>{{ member.first_name }} {{ member.last_name }}, {{ member.get_instrument_display }}</h2>
+    <div class="member_detail">
+    	<h2>{{ member.first_name }} {{ member.last_name }}, {{ member.get_instrument_display }}</h2>
+    	
+    	<img src="/{{member.photo.url}}" alt="{{member.first_name}} {{member.last_name}}"/>
+    	
+    	{{ member.bio|safe }}
+	</div>
 {% endblock %}

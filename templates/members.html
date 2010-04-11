@@ -1,11 +1,29 @@
 {% extends "mockup2.html" %}
 
+{% block title %}
+Meet the Orchestra
+{% endblock %}
+
 {% block content %}
+<div class="member_list">
 	<h2>Meet The Orchestra</h2>
 	<p>Orchestra Members</p>
+    
 	<ul>
 	{% for m in members %}
-	    <li><a href="/members/{{ m.id }}/">{{ m.first_name }} {{m.last_name}}, {{m.get_instrument_display}}</a></li>
-	{% endfor %} 
-	</ul>
+	   <li>{{m.get_instrument_display}}
+	   <ul>
+	       
+	       <li>
+	           {{m.first_name}} {{m.middle_name}} {{m.last_name}}
+	           {% if m.principal %}
+	               , Principal
+	           {% endif %}
+	       </li>
+	       
+	   </ul>
+	   </li>
+    {% endfor %}
+    </ul>
+</div>
 {% endblock %}

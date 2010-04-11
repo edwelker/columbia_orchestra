@@ -1,14 +1,18 @@
 {% extends "mockup.html" %}
 
 {% block member %}
+    {% if member %}
             <div class="col">
-                <img src="{{member.photo.url}}" alt="{{member.first_name}} {{member.last_name}}, {{member.get_instrument_display}}"/>
+                <img src="{{member.photo.thumb_url}}" alt="{{member.first_name}} {{member.last_name}}, {{member.get_instrument_display}}"/>
             </div>
             <div class="col last">
                 <p class="member">{{ member.first_name }} {{member.last_name}}, <span>{{member.get_instrument_display}}</span></p>
-                {{ member.bio }}
-                <p><a href="{{ member.url }}">Read More...</a></p>
+                {{ member.bio|safe }}
+                <p><a href="{{ member.get_absolute_url }}">Read More...</a></p>
             </div>
+    {% else %}
+        <p>No members found. Please add some members.</p>
+    {% endif %}
 {% endblock %}
 
 {% block concert %}

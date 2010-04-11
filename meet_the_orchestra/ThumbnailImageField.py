@@ -9,7 +9,7 @@ def _add_thumb(s):
     parts = s.split(".")
     parts.insert(-1, "thumb")
     if parts[-1].lower() not in ['jpeg', 'jpg']:
-        parts[-1] = jpg
+        parts[-1] = 'jpg'
     return ".".join(parts)
 	
 def _add_feat(s):
@@ -19,7 +19,7 @@ def _add_feat(s):
     parts = s.split(".")
     parts.insert(-1, "feat")
     if parts[-1].lower() not in ['jpeg', 'jpg']:
-        parts[-1] = jpg
+        parts[-1] = 'jpg'
     return ".".join(parts)	
 
  
