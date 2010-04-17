@@ -14,8 +14,12 @@
     {% include "inc/nav.html" %}
 		
 	<div class="main subpage">
+	   {% if flatpage.title %}<div class="content">{% endif %}
+	   
 		{% block content %}
 		{% endblock %}
+		
+	   {% if flatpage.title %}</div>{% endif %}
 	</div>
 	
     {% include "inc/footer.html" %}

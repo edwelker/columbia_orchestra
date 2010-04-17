@@ -4,7 +4,7 @@ from orch.meet_the_orchestra.models import OrchestraMember
 
 # Create your views here.
 def all_members(request):
-    m = OrchestraMember.objects.exclude(noncurrent_member=True).order_by('instrument', '-principal')
+    m = OrchestraMember.objects.exclude(noncurrent_member=True).order_by('instrument', '-principal', 'last_name')
     
     cut = ['Cello']
     

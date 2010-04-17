@@ -14,7 +14,7 @@ def home(request):
     member = cache.get('member')
     event = cache.get('event')
     
-    if member and event:
+    if member or event:
         return render_to_response('home.html', {'member': member, 'event': event}, 
                               context_instance=RequestContext(request))
     
