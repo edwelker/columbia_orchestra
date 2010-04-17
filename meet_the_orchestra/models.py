@@ -44,7 +44,7 @@ class OrchestraMember(models.Model):
 
     bio = models.TextField(help_text="Wrap paragraphs in '&lt;p&gt;...&lt;/p&gt;'")
 
-    photo = ThumbnailImageField(upload_to='images/user_photos')
+    photo = ThumbnailImageField(blank=True,upload_to='images/user_photos')
     
     former_member = models.BooleanField(help_text="Use to mark a member as former or not-current to remove from roster and featured member rotation.")
 
@@ -58,7 +58,7 @@ class OrchestraMember(models.Model):
         return "/members/%i/" % self.id
     
 class OrchestraMemberAdmin(admin.ModelAdmin):
-    list_display = ('__unicode__', 'last_name', 'first_name', 'instrument')
+    list_display = ('__unicode__', 'last_name', 'first_name', 'instrument', 'principal')
     list_filter = ('instrument',)
 
 admin.site.disable_action('delete_selected')

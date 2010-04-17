@@ -3,7 +3,9 @@
 {% block member %}
     {% if member %}
             <div class="col">
+                {% if member.photo %}
                 <img src="{{member.photo.thumb_url}}" alt="{{member.first_name}} {{member.last_name}}, {{member.get_instrument_display}}"/>
+                {% endif %}
             </div>
             <div class="col last">
                 <p class="member">{{ member.first_name }} {{member.last_name}}, <span>{{member.get_instrument_display}}</span></p>

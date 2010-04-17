@@ -4,7 +4,7 @@ from orch.meet_the_orchestra.models import OrchestraMember
 
 # Create your views here.
 def all_members(request):
-    m = OrchestraMember.objects.all().order_by('instrument')
+    m = OrchestraMember.objects.exclude(former_member=True).order_by('instrument', '-principal')
     return render_to_response('members.html', {'members': m })
 
 def member(request, member_id):

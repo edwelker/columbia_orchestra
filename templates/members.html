@@ -9,22 +9,24 @@ Meet the Orchestra
 	<h2>Meet The Orchestra</h2>
 	<p>Orchestra Members</p>
     
-	<ul>
-	{% for m in members %}
-	   <li>{{m.get_instrument_display}}
-	   <ul>
-	       
-	       <li>
-	           <a href="{{m.get_absolute_url}}">{{m.first_name}} {{m.middle_name}} {{m.last_name}}
-	           {% if m.principal %}
-	               , Principal
-	           {% endif %}
-	           </a>
-	       </li>
-	       
-	   </ul>
-	   </li>
-    {% endfor %}
+    
+    {% regroup members by get_instrument_display as inst_list %}
+    <ul class="members">
+        {%for inst in inst_list %}
+            <li>{{ inst.grouper }}
+            <ul>
+                {% for m in inst.list %}
+                    <li>
+                    <a href="{{m.get_absolute_url}}">{{m.first_name}} {{m.middle_name}}
+            {{m.last_name}}{% if m.principal %}, Principal
+                    {% endif %}
+                    </a>
+                    </li>
+                {% endfor %}
+            </ul>
+            </li>
+        {% endfor %}
     </ul>
+
 </div>
 {% endblock %}
