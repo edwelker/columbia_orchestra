@@ -18,7 +18,7 @@ def home(request):
         return render_to_response('home.html', {'member': member, 'event': event}, 
                               context_instance=RequestContext(request))
     
-    m = OrchestraMember.objects.exclude(photo__exact="", former_member="True")
+    m = OrchestraMember.objects.exclude(photo__exact="").exclude(noncurrent_member=True).exclude(bio__exact="")
     if len(m) > 0:
         rand_index = random.randint(0, (len(m) -1 ))
         member = m[rand_index] if (len(m) > 0) else None
@@ -27,8 +27,8 @@ def home(request):
     event = e[0] if (len(e) > 0) else None
     
     #set for the hour
-    cache.set('member', member, 0)
-    cache.set('event', event, 0)
+    cache.set('member', member, 3600)
+    cache.set('event', event, 3600)
     
     return render_to_response('home.html', {'member': member, 'event': event}, 
                               context_instance=RequestContext(request))

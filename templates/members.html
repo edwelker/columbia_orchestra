@@ -10,15 +10,21 @@ Meet the Orchestra
 	<p>Orchestra Members</p>
     
     
-    {% regroup members by get_instrument_display as inst_list %}
+    {% regroup members by instrument as inst_list %}
     <ul class="members">
         {%for inst in inst_list %}
             <li>{{ inst.grouper }}
             <ul>
                 {% for m in inst.list %}
                     <li>
-                    <a href="{{m.get_absolute_url}}">{{m.first_name}} {{m.middle_name}}
+                    {% if m.bio %}
+                        <a href="{{m.get_absolute_url}}">{{m.first_name}} {{m.middle_name}}
+            {{m.last_name}}{% if m.principal %}, Principal</a>
+                        {% endif %}
+                    {% else %}
+                        {{m.first_name}} {{m.middle_name}}
             {{m.last_name}}{% if m.principal %}, Principal
+                        {% endif %}
                     {% endif %}
                     </a>
                     </li>
