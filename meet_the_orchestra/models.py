@@ -45,6 +45,15 @@ class OrchestraMember(models.Model):
         elif self.concertmistress:
             name = name + ", Concertmistress"
         return name
+    
+    def fullmember(self):
+        if self.concertmaster or self.concertmistress:
+            n = self.withoutinstrument()
+        elif self.principal:
+            n = "%s %s %s, Principal %s" % (self.first_name, self.middle_name, self.last_name, self.instrument)
+        else:
+            n = self.withinstrument()
+        return n
 
     def get_absolute_url(self):
         return "/members/%s_%s/" % (self.first_name.lower(), self.last_name.lower())

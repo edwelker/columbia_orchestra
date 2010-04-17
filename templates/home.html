@@ -8,7 +8,7 @@
                 {% endif %}
             </div>
             <div class="col last">
-                <p class="member">{{ member }}, <span>{{member.get_instrument_display}}</span></p>
+                <p class="member">{{ member.fullmember }}</p>
                 {{ member.bio|safe|truncatewords_html:75 }}
                 <p><a href="{{ member.get_absolute_url }}">Read more about {{member.first_name}}...</a></p>
                 <p><a href="/members/">Meet more of the orchestra...</a></p>
