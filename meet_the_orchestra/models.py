@@ -28,7 +28,7 @@ class OrchestraMember(models.Model):
     noncurrent_member = models.BooleanField(help_text="Use to mark a member as former or not-current to temporarily remove from roster.")
 
     class Meta: 
-        ordering = ["instrument"]
+        ordering = ["last_name"]
 
     def __unicode__(self):
         return "%s %s %s" % (self.first_name, self.middle_name, self.last_name)
@@ -52,6 +52,8 @@ class OrchestraMember(models.Model):
 class OrchestraMemberAdmin(admin.ModelAdmin):
     list_display = ('__unicode__', 'last_name', 'first_name', 'instrument', 'noncurrent_member')
     list_filter = ('instrument','principal','noncurrent_member')
+    search_fields = ('first_name', 'last_name', 'middle_name')
+    list_per_page = 30
 
 admin.site.disable_action('delete_selected')
 admin.site.register(Instrument)

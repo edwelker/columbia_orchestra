@@ -2,14 +2,16 @@ body { margin:0;padding:0;background-color:#333; font: 62.5%/1.4 arial, sans-ser
 .description h2, .description div, .main h2, .subpage h1 { font-family: Georgia, Cambria, "Times New Roman", Times, serif; }
 
 .content { width: 75%; }
+.main div.wide { width: 100%;}
 div.subpage { padding: 20px; }
 .content p { font-size: 1.4em; }
 .content h1 { font-size: 2.4em; /*background-color: #fbbf13; display: inline; padding: .2em 1em; -moz-box-shadow: 2px 2px 8px rgba(0,0,0,.5); -webkit-box-shadow: 5px 8px 8px rgba(0,0,0,.5); box-shadow: 5px 8px 8px rgba(0,0,0,.5); position: relative; top: -.25em; left: .5em; */ }
 .content h3 { font-size: 1.6em; font-weight: bold; }
 .member_detail img { float: left; margin: 0 2em 2em 0; }
 .member_detail p:nth-of-type(1):first-letter{ font-size: 2em; font-weight: bold; line-height: .6; }
-.members  { font-size: 1.4em; }
-.members, .members ul { list-style-type: none;}
+.member_list .group { float: left; margin-right: 3em; }
+.member_list ul {list-style-type:none; font-size:1.4em; padding-left:1.5em; margin:.3em 0;}
+.member_list h3 { margin: .5em 0 .3em;}
 
 .offscreen { text-indent: -9999em; }
 .noborder { border: none; }

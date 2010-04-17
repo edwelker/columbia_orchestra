@@ -5,31 +5,47 @@ Meet the Orchestra
 {% endblock %}
 
 {% block content %}
+<div class="content wide">
 <div class="member_list">
 	<h2>Meet The Orchestra</h2>
 	<p>Orchestra Members</p>
     
-    
     {% regroup members by instrument as inst_list %}
-    <ul class="members">
-        {%for inst in inst_list %}
-            <li>{{ inst.grouper }}
-            <ul>
-                {% for m in inst.list %}
-                    <li>
-                    {% if m.bio %}
-                        <a href="{{m.get_absolute_url}}">
-                            {{ m.withoutinstrument }}
-                        </a>
-                    {% else %}
+    {%for inst in inst_list %}
+    
+    {% if forloop.first %}
+        <div class="group">
+    {% endif %}
+    
+        <h3>{{ inst.grouper }}</h3>
+        <ul>
+            {% for m in inst.list %}
+                <li>
+                {% if m.bio %}
+                    <a href="{{m.get_absolute_url}}">
                         {{ m.withoutinstrument }}
-                    {% endif %}
-                    </li>
-                {% endfor %}
-            </ul>
-            </li>
-        {% endfor %}
-    </ul>
-
+                    </a>
+                {% else %}
+                    {{ m.withoutinstrument }}
+                {% endif %}
+                </li>
+            {% endfor %}
+        </ul>
+        
+    {% ifequal forloop.counter 3 %}
+        </div><div class="group">
+    {% endifequal %}
+    {% ifequal forloop.counter 10 %}
+        </div><div class="group">
+    {% endifequal %}
+    {% ifequal forloop.counter 19 %}
+        </div><div class="group">
+    {% endifequal %}
+    {% if forloop.last %}
+        </div>
+    {% endif %}
+        
+    {% endfor %}
+</div>
 </div>
 {% endblock %}
