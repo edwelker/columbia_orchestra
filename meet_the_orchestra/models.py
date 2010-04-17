@@ -3,7 +3,6 @@ from django.contrib import admin
 from ThumbnailImageField import ThumbnailImageField
 
 # Create your models here.
-
 class Instrument(models.Model):
     name = models.CharField(max_length=120)
     
@@ -19,6 +18,8 @@ class OrchestraMember(models.Model):
     #instrument = models.IntegerField(max_length=10, choices=INSTRUMENTS)
     instrument = models.ForeignKey(Instrument)
     principal = models.BooleanField()
+    concertmaster = models.BooleanField()
+    concertmistress = models.BooleanField()
 
     bio = models.TextField(blank=True,help_text="Wrap paragraphs in '&lt;p&gt;...&lt;/p&gt;'")
 
@@ -31,12 +32,25 @@ class OrchestraMember(models.Model):
 
     def __unicode__(self):
         return "%s %s %s" % (self.first_name, self.middle_name, self.last_name)
+    
+    def withinstrument(self):
+        return "%s %s %s, %s" % (self.first_name, self.middle_name, self.last_name, self.instrument)
+    
+    def withoutinstrument(self):
+        name = "%s %s %s" % (self.first_name, self.middle_name, self.last_name)
+        if self.principal:
+            name = name + ", Principal"
+        elif self.concertmaster:
+            name = name + ", Concertmaster"
+        elif self.concertmistress:
+            name = name + ", Concertmistress"
+        return name
 
     def get_absolute_url(self):
-        return "/members/%i/" % self.id
+        return "/members/%s_%s/" % (self.first_name.lower(), self.last_name.lower())
     
 class OrchestraMemberAdmin(admin.ModelAdmin):
-    list_display = ('__unicode__', 'last_name', 'first_name', 'instrument', 'principal', 'noncurrent_member')
+    list_display = ('__unicode__', 'last_name', 'first_name', 'instrument', 'noncurrent_member')
     list_filter = ('instrument','principal','noncurrent_member')
 
 admin.site.disable_action('delete_selected')

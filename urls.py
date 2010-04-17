@@ -11,7 +11,7 @@ urlpatterns = patterns('',
     (r'^$', 'orch.homepage.views.home'),
     
     (r'^members/$', 'orch.meet_the_orchestra.views.all_members'),
-    (r'^members/(?P<member_id>\d+)/$', 'orch.meet_the_orchestra.views.member'),
+    (r'^members/(?P<first_name>.*)_(?P<last_name>.*)/$', 'orch.meet_the_orchestra.views.member'),
 
     # Uncomment the admin/doc line below and add 'django.contrib.admindocs' 
     # to INSTALLED_APPS to enable admin documentation:

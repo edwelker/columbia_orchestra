@@ -7,6 +7,6 @@ def all_members(request):
     m = OrchestraMember.objects.exclude(noncurrent_member=True).order_by('instrument', '-principal')
     return render_to_response('members.html', {'members': m })
 
-def member(request, member_id):
-    m = get_object_or_404(OrchestraMember, pk=member_id)
+def member(request, first_name, last_name):
+    m = get_object_or_404(OrchestraMember, first_name__iexact=first_name, last_name__iexact=last_name)
     return render_to_response('member.html', {'member': m})

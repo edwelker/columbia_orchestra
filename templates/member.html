@@ -6,10 +6,10 @@
 
 {% block content %}
     <div class="member_detail">
-    	<h2>{{ member.first_name }} {{ member.last_name }}, {{ member.get_instrument_display }}</h2>
+    	<h2>{{ member.withinstrument }}</h2>
     	
     	{% if member.photo %}
-    	   <img src="/{{member.photo.url}}" alt="{{member.first_name}} {{member.last_name}}"/>
+    	   <img src="/{{member.photo.url}}" alt="{{member}}"/>
     	{% endif %}
     	
     	{{ member.bio|safe }}

@@ -18,15 +18,12 @@ Meet the Orchestra
                 {% for m in inst.list %}
                     <li>
                     {% if m.bio %}
-                        <a href="{{m.get_absolute_url}}">{{m.first_name}} {{m.middle_name}}
-            {{m.last_name}}{% if m.principal %}, Principal</a>
-                        {% endif %}
+                        <a href="{{m.get_absolute_url}}">
+                            {{ m.withoutinstrument }}
+                        </a>
                     {% else %}
-                        {{m.first_name}} {{m.middle_name}}
-            {{m.last_name}}{% if m.principal %}, Principal
-                        {% endif %}
+                        {{ m.withoutinstrument }}
                     {% endif %}
-                    </a>
                     </li>
                 {% endfor %}
             </ul>
