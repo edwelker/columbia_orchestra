@@ -1,5 +1,5 @@
 from orch.meet_the_orchestra.models import OrchestraMember
-from orch.homepage.models import Event
+from orch.season_manager.models import Event
 from django.template import RequestContext
 from django.shortcuts import render_to_response
 import datetime

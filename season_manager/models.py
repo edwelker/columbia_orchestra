@@ -1,6 +1,7 @@
 from django.db import models
 from django.contrib import admin
 
+# Create your models here.
 class Event(models.Model):
     name = models.CharField(max_length=100, help_text="Name of the Event. Must be unique, even across seasons (so if you're doing 'Holiday Concert', make it '2009 Holiday Concert', etc.)")
     date = models.DateTimeField()

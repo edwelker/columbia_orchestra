@@ -8,7 +8,7 @@ admin.autodiscover()
 urlpatterns = patterns('',
     # Example:
     # (r'^orch/', include('orch.foo.urls')),
-    (r'^$', 'orch.homepage.views.home'),
+    (r'^$', 'orch.homepage_viewer.views.home'),
     
     (r'^members/$', 'orch.meet_the_orchestra.views.all_members'),
     (r'^members/(?P<first_name>.*)_(?P<last_name>.*)/$', 'orch.meet_the_orchestra.views.member'),
