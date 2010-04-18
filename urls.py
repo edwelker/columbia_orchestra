@@ -10,8 +10,8 @@ urlpatterns = patterns('',
     # (r'^orch/', include('orch.foo.urls')),
     (r'^$', 'orch.homepage_viewer.views.home'),
     
-    (r'^members/$', 'orch.meet_the_orchestra.views.all_members'),
-    (r'^members/(?P<first_name>.*)_(?P<last_name>.*)/$', 'orch.meet_the_orchestra.views.member'),
+    (r'^members/$', 'orch.roster.views.all_members'),
+    (r'^members/(?P<first_name>.*)_(?P<last_name>.*)/$', 'orch.roster.views.member'),
 
     # Uncomment the admin/doc line below and add 'django.contrib.admindocs' 
     # to INSTALLED_APPS to enable admin documentation:
