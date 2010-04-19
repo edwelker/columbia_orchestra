@@ -3,6 +3,7 @@ from django.conf import settings
 from django.core.cache import cache
 import twitter
 import re
+from django.http import HttpResponseServerError
 
 
 def latest_tweets( request ):
@@ -16,10 +17,13 @@ def latest_tweets( request ):
     replacement = '<a href="\\1">\\1</a>'
 
     api = twitter.Api()
-    tweets = api.GetUserTimeline( settings.TWITTER_USER, count=2 )
-    for t in tweets:
-        t.date = datetime.strptime( t.created_at, "%a %b %d %H:%M:%S +0000 %Y" )
-        t.text = re.sub(pattern, replacement, t.text)
-    cache.set( 'tweets', tweets, settings.TWITTER_TIMEOUT )
+    try:
+        tweets = api.GetUserTimeline( settings.TWITTER_USER, count=2 )
+        for t in tweets:
+            t.date = datetime.strptime( t.created_at, "%a %b %d %H:%M:%S +0000 %Y" )
+            t.text = re.sub(pattern, replacement, t.text)
+        cache.set( 'tweets', tweets, settings.TWITTER_TIMEOUT )
+    except:
+        return HttpResponseServerError('Twitter failure')
 
     return {"tweets": tweets, "dates": dates}
