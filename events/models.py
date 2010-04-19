@@ -1,5 +1,4 @@
 from django.db import models
-from django.contrib import admin
 
 # Create your models here.
 class Season(models.Model):
@@ -17,8 +16,8 @@ class Season(models.Model):
 
 	def get_absolute_url(self):
 		return "/events/%s/" % self.slug
+	
 
-#admin.site.register(Season)
 
 
 class Location(models.Model):
@@ -36,8 +35,10 @@ class Location(models.Model):
 		
 	def get_absolute_url(self):
 		return "/locations/%s/" % self.slug.lower()
+	
 
-#admin.site.register(Location)
+
+
 
 
 class Event(models.Model):
@@ -60,10 +61,8 @@ class Event(models.Model):
 	def get_absolute_url(self):
 		return "/events/%s/" % self.slug
 
-class EventAdmin(admin.ModelAdmin):
-	prepopulated_fields = {'slug': ['name']}
 
-#admin.site.register(Event, EventAdmin)
+
 
 
 class PreConcertDiscussion(models.Model):
@@ -74,8 +73,10 @@ class PreConcertDiscussion(models.Model):
 	
 	def __unicode__(self):
 		return self.event.name
+	
 
-#admin.site.register(PreConcertDiscussion)
+
+
 		
 class Soloist(models.Model):
 	name = models.CharField(max_length=100, help_text="Artist Name.")
@@ -92,5 +93,6 @@ class Soloist(models.Model):
 		
 	def get_absolute_url(self):
 		return "/soloists/%s/" % self.slug
+	
 
-#admin.site.register(Soloist)
+
