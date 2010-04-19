@@ -87,7 +87,7 @@ INSTALLED_APPS = (
     'django.contrib.admin',
     'django.contrib.flatpages',
     'orch.roster',
-    'orch.season',
+    'orch.events',
     'orch.homepage_viewer',
     'django_extensions',
 #    'debug_toolbar',

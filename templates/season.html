@@ -1,0 +1,33 @@
+{% extends 'mockup2.html' %}
+
+{% block title %}{{ seasonname }}{% endblock %}
+
+{% block content %}
+<div class="content">
+    {% if season %}
+        <h2>{{ seasonname }}</h2>
+        <p><em>Events and performers are subject to change.</em></p>
+        <div class="vcalendar">
+            {% for event in season %}
+            <div class="vevent">
+                
+                <h3 class="summary">{{ event.name }}</h3>
+                <p class="dtstart" title='{{ event.date|date:"Y-m-d\TH:i:s" }}-05:00'>{{ event.date|date:"l, F jS Y" }} - {{ event.date|date:"g:i a" }}</p>
+                <p class="location"><a href="{{ event.location.get_absolute_url }}">{{ event.location }}</a></p>
+                {% if event.ticket_link %}
+                <p><a href="{{ event.ticket_link }}">Click here to purchase tickets</a></p>
+                {% endif %}
+                
+                {% if event.description %}
+                    <p>{{ event.description|safe }}</p>
+                {% endif %}
+            </div>
+            {% endfor %}
+        </div>
+    {% else %}
+        <h2>No Seasons Found</h2>
+        <p>Unable to find the current season. Please contact the adminstrator.</p>
+    {% endif %}
+</div>
+{% endblock %}
+

@@ -1,5 +1,6 @@
 from django.conf.urls.defaults import *
 from django.conf import settings
+from events.models import Season, Location, Event, PreConcertDiscussion, Soloist
 
 # Uncomment the next two lines to enable the admin:
 from django.contrib import admin
@@ -12,6 +13,13 @@ urlpatterns = patterns('',
     
     (r'^members/$', 'orch.roster.views.all_members'),
     (r'^members/(?P<first_name>.*)_(?P<last_name>.*)/$', 'orch.roster.views.member'),
+    
+    (r'season/$', 'events.views.view_current_season'),
+	(r'events/(?P<slug>[-\w]+)/$', 'events.views.view_season'),
+	(r'locations/$', 'events.views.all_locations'),
+	(r'locations/(?P<slug>[-\w]+)/$', 'events.views.single_location'),
+	(r'soloists/$', 'events.views.all_soloists'),
+	(r'soloists/(?P<slug>[-\w]+)/$', 'events.views.single_soloist'),
 
     # Uncomment the admin/doc line below and add 'django.contrib.admindocs' 
     # to INSTALLED_APPS to enable admin documentation:

@@ -5,9 +5,6 @@ from orch.roster.models import OrchestraMember
 # Create your views here.
 def all_members(request):
     m = OrchestraMember.objects.exclude(noncurrent_member=True).order_by('instrument', '-principal', 'last_name')
-    
-    cut = ['Cello']
-    
     return render_to_response('members.html', {'members': m, 'cut': cut})
 
 def member(request, first_name, last_name):
