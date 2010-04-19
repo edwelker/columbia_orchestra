@@ -4,23 +4,24 @@
 
 {% block content %}
 <div class="content">
-	<h2>Season Soloists</h2>
-	
-		<p>{{ soloist.name }}, {{ soloist.instrument }}</p>
-		<p>Performing at
-		{% for event in events %}
-			<a href="{{ event.get_absolute_url }}">{{ event.name }}</a>, {{ event.date|date:"l, F jS Y" }}
-		{% endfor %}
-		</p>
-		
-		{% if soloist.work %}
-		  <p>{{ soloist.work }}</p>
-		{% endif %}
-		
-		{% if soloist.image %}
-			<img src="{{ soloist.image.url }}" alt="{{ soloist.name }}"/>
-		{% endif %}
-		
-		{{ soloist.bio|safe }}
+    <h2>{{ soloist.name }}, {{ soloist.instrument }}</h2>
+    
+    {% if soloist.work %}
+      <p>{{ soloist.work }}</p>
+    {% endif %}
+    
+    <p>
+    {% for event in events %}
+    	<a href="{{ event.get_absolute_url }}">{{ event.name }}</a>, {{ event.date|date:"l, F jS Y" }}
+    {% endfor %}
+    </p>
+    
+    
+    
+    {% if soloist.image %}
+    	<img src="/{{ soloist.image.url }}" alt="{{ soloist.name }}"/>
+    {% endif %}
+    
+    {{ soloist.bio|safe }}
 </div>
 {% endblock %}

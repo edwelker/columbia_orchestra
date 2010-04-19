@@ -2,10 +2,16 @@
 
 {% block content %}
 <div class="content">
-	<h2>Season Soloists</h2>
+	<h2>Season Soloists - {{ season.name }}</h2>
 	{% if soloists %}
 	{% for soloist in soloists %}
-		<p><a href="{{ soloist.get_absolute_url }}">{{ soloist.name }}</a>, {{ soloist.instrument }}</p>
+		<h3><a href="{{ soloist.get_absolute_url }}">{{ soloist.name }}</a>, 
+		{{ soloist.instrument }}</h3>
+		<p>{{ soloist.work }} &mdash; 
+		{% for e in soloist.event_set.all %}
+		   <a href="{{e.get_absolute_url}}">{{ e.name }}</a>
+		{% endfor %}
+		</p>
 	{% endfor %}
 	{% else %}
 		<p>No soloists found for the current season.</p>

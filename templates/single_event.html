@@ -1,10 +1,11 @@
 {% extends 'mockup2.html' %}
 
+{% block title %}{{event.name}}, {{season.name}} {% endblock %}
+
 {% block content %}
-<div class="content">
+<div class="content event_detail">
 	<div class="concertDescription">
-		<span class="descriptor">Next Concert in the {{ season.name }}</span>
-		<h2 class="summary">{{ event.name }}</h2>
+		<h2 class="summary">{{ event.name }}, {{ season.name }}</h2>
 		<div class="concertInfo">
 			<span class="date">{{ event.date|date:"l, F jS Y" }} - {{ event.date|date:"g:i a" }}<br>
 			<a href="{{ event.location }}">{{ event.location }}</a><br>
@@ -13,9 +14,11 @@
 			<p><a href="{{ event.ticket_link }}">Click here to purchase tickets</a></p>
 			{% endif %}
 		</div>
-		<img src="{{event.image.url}}" alt="Event promo image"/>
+
+        <img src="/{{event.image.url}}" alt="Event promo image"/>
+        
 		{% if event.description %}
-			<p>{{ event.description }}</p>
+			{{ event.description|safe }}
 		{% endif %}
 	</div>
 </div>

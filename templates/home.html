@@ -26,7 +26,7 @@
             <div class="description">
                 <h2>{{event.name}}</h2>
                 <div>{{ event.date|date:"l, F jS Y" }}</div>
-                <div>{{ event.date|date:"g:i a" }}, {{event.location}}</div>
+                <div>{{ event.date|date:"g:i a" }}, <a href="{{event.location.get_absolute_url}}">{{event.location}}</a></div>
                 <div class="conductor">Jason Love, conductor</div>
                 {{ event.description|safe }}
 <p class="tickets">For advance tickets, please visit our Tickets page. Tickets will also be available at the door. <em>We are not equipped to process credit cards at the door; we are happy to accept cash or personal checks.</em></p>

@@ -4,14 +4,17 @@ body { margin:0;padding:0;background-color:#333; font: 62.5%/1.4 arial, sans-ser
 .content { width: 75%; }
 .main div.wide { width: 100%;}
 div.subpage { padding: 20px; }
-.content p, .content ul { font-size: 1.4em; }
+.content p, .content ul, .concertInfo, .vcard { font-size: 1.4em; }
+.concertInfo { margin-bottom: 1em; }
 .content h1 { font-size: 2.4em; /*background-color: #fbbf13; display: inline; padding: .2em 1em; -moz-box-shadow: 2px 2px 8px rgba(0,0,0,.5); -webkit-box-shadow: 5px 8px 8px rgba(0,0,0,.5); box-shadow: 5px 8px 8px rgba(0,0,0,.5); position: relative; top: -.25em; left: .5em; */ }
 .content h3 { font-size: 1.6em; font-weight: bold; }
-.member_detail img { float: left; margin: 0 2em 2em 0; }
-.member_detail p:nth-of-type(1):first-letter{ font-size: 2em; font-weight: bold; line-height: .6; }
+.member_detail img, .event_detail img { float: left; margin: 0 2em 2em 0; }
+.member_detail p:nth-of-type(1):first-letter, .event_detail p:nth-of-type(1):first-letter{ font-size: 2em; font-weight: bold; line-height: .6; }
 .member_list .group { float: left; margin-right: 3em; }
 .member_list ul {list-style-type:none; font-size:1.4em; padding-left:1.5em; margin:.3em 0;}
 .member_list h3 { margin: .5em 0 .3em;}
+.vcalendar h3 { font-size: 2em; }
+p.dtstart, p.location, p.tickets { margin: 0;}
 
 .offscreen { text-indent: -9999em; }
 .noborder { border: none; }
@@ -52,6 +55,8 @@ div.subpage { padding: 20px; }
 .description div.conductor { font-style: italic; }
 .description p { font-size: 1.4em; }
 .description p.tickets { font-size: 1.2em; padding-top: 1.2em; border-top: 1px solid #9d7a17; border-top: 1px solid rgba(0,0,0,.3) }
+.description a { color:#000; text-decoration: none; border-bottom: 1px dotted #000;}
+.description a:hover { color: #008; border-bottom: 1px solid #008;}
 
 .col p, .col ul li a { font-size: 1.4em; }
 

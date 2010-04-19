@@ -15,7 +15,7 @@ class Season(models.Model):
 		ordering = ["startdate"]
 
 	def get_absolute_url(self):
-		return "/events/%s/" % self.slug
+		return "/season/%s/" % self.slug
 	
 
 
@@ -59,7 +59,7 @@ class Event(models.Model):
 		ordering = ["date"]
 
 	def get_absolute_url(self):
-		return "/events/%s/" % self.slug
+		return "/season/events/%s/" % self.slug
 
 
 

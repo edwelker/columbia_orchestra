@@ -6,7 +6,6 @@
 <div class="content">
     {% if season %}
         <h2>{{ seasonname }}</h2>
-        <p><em>Events and performers are subject to change.</em></p>
         <div class="vcalendar">
             {% for event in season %}
             <div class="vevent">
@@ -15,11 +14,16 @@
                 <p class="dtstart" title='{{ event.date|date:"Y-m-d\TH:i:s" }}-05:00'>{{ event.date|date:"l, F jS Y" }} - {{ event.date|date:"g:i a" }}</p>
                 <p class="location"><a href="{{ event.location.get_absolute_url }}">{{ event.location }}</a></p>
                 {% if event.ticket_link %}
-                <p><a href="{{ event.ticket_link }}">Click here to purchase tickets</a></p>
+                <p class="tickets"><a href="{{ event.ticket_link }}">Click here to purchase tickets</a></p>
+                {% endif %}
+                {% if event.soloists %}
+                    {% for s in event.soloists.all %}
+                        <p class="soloist"><a href="{{s.get_absolute_url}}">{{s.name}}</a> &mdash; {{s.work}}</p>
+                    {% endfor %}
                 {% endif %}
                 
                 {% if event.description %}
-                    <p>{{ event.description|safe }}</p>
+                    {{ event.description|safe }}
                 {% endif %}
             </div>
             {% endfor %}
@@ -28,6 +32,7 @@
         <h2>No Seasons Found</h2>
         <p>Unable to find the current season. Please contact the adminstrator.</p>
     {% endif %}
+    <p><em>Events and performers are subject to change.</em></p>
 </div>
 {% endblock %}
 
