@@ -50,7 +50,14 @@ class Event(models.Model):
 	description = models.TextField(help_text="Description paragraphs (required). Please wrap all paragraphs in '&lt;p&gt;....&lt;/p&gt;'.")    
 	slug = models.SlugField(unique=True, help_text='Suggested value is automatically generated from event name. Must be unique.')
 	soloists = models.ManyToManyField("Soloist", blank=True)
-	image = models.ImageField( help_text="Select a image to represent this concert.", upload_to="images")
+	image = models.ImageField(blank=True, help_text="Not optional for primary events.", upload_to="images")
+	
+	STATUS=(
+		    (1, "Primary"),
+		    (2, "Secondary"),
+		    )
+	
+	status = models.IntegerField(choices=STATUS, default=1, help_text="Primary events are major and require an image as they will always appear first on the homepage. Secondary include chamber concerts, etc.")
 
 	def __unicode__(self):
 		return self.name

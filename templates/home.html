@@ -19,20 +19,47 @@
 {% endblock %}
 
 {% block concert %}
-    {% if event.date %}
+    {% if primary_event.date %}
+    <div class="primary">
+        {% if primary_event.image %}
             <div class="image">
-                <img src="{{event.image.url}}" alt="Event promo image"/>
+                <img src="{{primary_event.image.url}}" alt="Event promo image"/>
             </div>
+        {% endif %}
             <div class="description">
-                <h2>{{event.name}}</h2>
-                <div>{{ event.date|date:"l, F jS Y" }}</div>
-                <div>{{ event.date|date:"g:i a" }}, <a href="{{event.location.get_absolute_url}}">{{event.location}}</a></div>
+                <h2>{{primary_event.name}}</h2>
+                <div>{{ primary_event.date|date:"l, F jS Y" }}</div>
+                <div>{{ primary_event.date|date:"g:i a" }}, <a href="{{primary_event.location.get_absolute_url}}">{{primary_event.location}}</a></div>
                 <div class="conductor">Jason Love, conductor</div>
-                {{ event.description|safe }}
-<p class="tickets">For advance tickets, please visit our Tickets page. Tickets will also be available at the door. <em>We are not equipped to process credit cards at the door; we are happy to accept cash or personal checks.</em></p>
-                </div>
+                {{ primary_event.description|safe }}
             </div>
+    </div>
     {% else %}
         <p>No events found. Please add an event.</p>
     {% endif %}
+    
+    <!--
+    {% if secondary_event.date %}
+        <div class="secondary">
+            <div class="description">
+                <h2>{{secondary_event.name}}</h2>
+                <div>{{ secondary_event.date|date:"l, F jS Y" }}</div>
+                <div>{{ secondary_event.date|date:"g:i a" }}, <a href="{{secondary_event.location.get_absolute_url}}">{{secondary_event.location}}</a></div>
+                {{ secondary_event.description|safe }}
+            </div>
+        {% if secondary_event.image %}
+            <div class="image">
+                <img src="{{secondary_event.image.url}}" alt="Event promo image"/>
+            </div>
+        {% endif %}
+        </div>
+    {% else %}
+        <p>No events found. Please add an event.</p>
+    {% endif %}
+    -->
+    
+        
+    <div class="description">
+        <p class="tickets">For advance tickets, please visit our Tickets page. Tickets will also be available at the door. <em>We are not equipped to process credit cards at the door; we are happy to accept cash or personal checks.</em></p>
+    </div>    
 {% endblock %}

@@ -15,6 +15,7 @@ div.subpage { padding: 20px; }
 .member_list h3 { margin: .5em 0 .3em;}
 .vcalendar h3 { font-size: 2em; }
 p.dtstart, p.location, p.tickets { margin: 0;}
+.vevent { border-bottom: 1px solid #ccc; }
 
 .offscreen { text-indent: -9999em; }
 .noborder { border: none; }
