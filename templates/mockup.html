@@ -37,7 +37,7 @@
 			<h2><a class="social facebook" href="http://www.facebook.com/pages/Columbia-Orchestra/211864312316/">Facebook</a></h2>
 			{% if fb %}
 			    {% for f in fb %}
-			        <p>{{ f.fixed_date|date:"F Y" }}</p>
+			        <p>{{ f.published|date:"F Y" }}</p>
 			        <p>{{ f.title|safe }}</p>
 			    {% endfor %}
 			{% else %}

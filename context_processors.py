@@ -42,7 +42,8 @@ def latest_facebook( request ):
         #dates = [parse(d.published) for d in fb]
     
         for entry in fb:
-            entry['fixed_date'] = parse(entry.published)
+            entry['published'] = parse(entry.published)
+            entry['title'] = re.sub(pattern, replacement, entry.title)
             
         cache.set( 'fb', fb, settings.TWITTER_TIMEOUT )    
     except:
