@@ -66,7 +66,7 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.flatpages.middleware.FlatpageFallbackMiddleware',
-#    'debug_toolbar.middleware.DebugToolbarMiddleware',
+    'debug_toolbar.middleware.DebugToolbarMiddleware',
 )
 
 ROOT_URLCONF = 'orch.urls'
@@ -90,13 +90,14 @@ INSTALLED_APPS = (
     'orch.events',
     'orch.homepage_viewer',
     'django_extensions',
-#    'debug_toolbar',
+    'debug_toolbar',
 )
 
 from django.conf.global_settings import TEMPLATE_CONTEXT_PROCESSORS
 
 TEMPLATE_CONTEXT_PROCESSORS = TEMPLATE_CONTEXT_PROCESSORS + (
 	"orch.context_processors.latest_tweets",
+    "orch.context_processors.latest_facebook",
 )
 
 INTERNAL_IPS = ('127.0.0.1')

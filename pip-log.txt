@@ -322,3 +322,54 @@ Traceback (most recent call last):
   File "/home/ewelker/git_repos/col/lib/python2.6/site-packages/pip-0.6.3-py2.6.egg/pip/index.py", line 117, in find_requirement
     raise DistributionNotFound('No distributions at all found for %s' % req)
 DistributionNotFound: No distributions at all found for python-pygraphviz
+------------------------------------------------------------
+/home/ewelker/git_repos/col/bin/pip run on Thu Apr 29 21:22:53 2010
+Downloading/unpacking feed
+  Getting page http://pypi.python.org/simple/feed
+  Could not fetch URL http://pypi.python.org/simple/feed: HTTP Error 404: Not Found
+  Will skip URL http://pypi.python.org/simple/feed when looking for download links for feed
+  Getting page http://pypi.python.org/simple/
+  URLs to search for versions for feed:
+  * http://pypi.python.org/simple/feed/
+  Getting page http://pypi.python.org/simple/feed/
+  Could not fetch URL http://pypi.python.org/simple/feed/: HTTP Error 404: Not Found
+  Will skip URL http://pypi.python.org/simple/feed/ when looking for download links for feed
+  Could not find any downloads that satisfy the requirement feed
+No distributions at all found for feed
+Exception information:
+Traceback (most recent call last):
+  File "/home/ewelker/git_repos/col/lib/python2.6/site-packages/pip-0.6.3-py2.6.egg/pip/basecommand.py", line 115, in main
+    self.run(options, args)
+  File "/home/ewelker/git_repos/col/lib/python2.6/site-packages/pip-0.6.3-py2.6.egg/pip/commands/install.py", line 155, in run
+    requirement_set.install_files(finder, force_root_egg_info=self.bundle, bundle=self.bundle)
+  File "/home/ewelker/git_repos/col/lib/python2.6/site-packages/pip-0.6.3-py2.6.egg/pip/req.py", line 823, in install_files
+    url = finder.find_requirement(req_to_install, upgrade=self.upgrade)
+  File "/home/ewelker/git_repos/col/lib/python2.6/site-packages/pip-0.6.3-py2.6.egg/pip/index.py", line 117, in find_requirement
+    raise DistributionNotFound('No distributions at all found for %s' % req)
+DistributionNotFound: No distributions at all found for feed
+------------------------------------------------------------
+/home/ewelker/git_repos/col/bin/pip run on Sun May  2 12:12:45 2010
+Downloading/unpacking dateutil
+  Getting page http://pypi.python.org/simple/dateutil
+  Could not fetch URL http://pypi.python.org/simple/dateutil: HTTP Error 404: Not Found
+  Will skip URL http://pypi.python.org/simple/dateutil when looking for download links for dateutil
+  Getting page http://pypi.python.org/simple/
+  Real name of requirement dateutil is dateutil
+  URLs to search for versions for dateutil:
+  * http://pypi.python.org/simple/dateutil/
+  Getting page http://pypi.python.org/simple/dateutil/
+  Could not fetch URL http://pypi.python.org/simple/dateutil/: HTTP Error 404: Not Found
+  Will skip URL http://pypi.python.org/simple/dateutil/ when looking for download links for dateutil
+  Could not find any downloads that satisfy the requirement dateutil
+No distributions at all found for dateutil
+Exception information:
+Traceback (most recent call last):
+  File "/home/ewelker/git_repos/col/lib/python2.6/site-packages/pip-0.6.3-py2.6.egg/pip/basecommand.py", line 115, in main
+    self.run(options, args)
+  File "/home/ewelker/git_repos/col/lib/python2.6/site-packages/pip-0.6.3-py2.6.egg/pip/commands/install.py", line 155, in run
+    requirement_set.install_files(finder, force_root_egg_info=self.bundle, bundle=self.bundle)
+  File "/home/ewelker/git_repos/col/lib/python2.6/site-packages/pip-0.6.3-py2.6.egg/pip/req.py", line 823, in install_files
+    url = finder.find_requirement(req_to_install, upgrade=self.upgrade)
+  File "/home/ewelker/git_repos/col/lib/python2.6/site-packages/pip-0.6.3-py2.6.egg/pip/index.py", line 117, in find_requirement
+    raise DistributionNotFound('No distributions at all found for %s' % req)
+DistributionNotFound: No distributions at all found for dateutil

@@ -33,8 +33,16 @@
             {% else %}
                 <p>Sorry, Twitter seems to have the hiccups!</p>
             {% endif %}
+            
 			<h2><a class="social facebook" href="http://www.facebook.com/pages/Columbia-Orchestra/211864312316/">Facebook</a></h2>
-			<p>Don't forget our rescheduled "Symphonic Pops" this Saturday night at 7:30 in the Jim Rouse Theatre. No snow this time! It'll be a great show - movie music, Broadway, Gershwn, Irish dancing and more! Hope to see you there.</p>
+			{% if fb %}
+			    {% for f in fb %}
+			        <p>{{ f.fixed_date|date:"F Y" }}</p>
+			        <p>{{ f.title|safe }}</p>
+			    {% endfor %}
+			{% else %}
+			    <p>Sorry, Facebook seems to be having a problem!</p>
+			{% endif %}
 		</div>
 		
 		
