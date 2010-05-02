@@ -21,6 +21,8 @@ urlpatterns = patterns('',
 	(r'^locations/(?P<slug>[-\w]+)/$', 'events.views.single_location'),
 	(r'^soloists/$', 'events.views.all_soloists'),
 	(r'^soloists/(?P<slug>[-\w]+)/$', 'events.views.single_soloist'),
+    
+    (r'^search/', include('haystack.urls')),
 
     # Uncomment the admin/doc line below and add 'django.contrib.admindocs' 
     # to INSTALLED_APPS to enable admin documentation:

@@ -37,7 +37,11 @@ class Location(models.Model):
     def get_absolute_url(self):
         return "/locations/%s/" % self.slug.lower()
     
-
+    def search_result(self):
+        return self.__unicode__()
+    
+    def type(self):
+        return "Location"
 
 
 
@@ -68,8 +72,12 @@ class Event(models.Model):
 
     def get_absolute_url(self):
         return "/season/events/%s/" % self.slug
+    
+    def search_result(self):
+        return self.__unicode__()
 
-
+    def type(self):
+        return "Concert"
 
 
 
@@ -102,4 +110,8 @@ class Soloist(models.Model):
     def get_absolute_url(self):
         return "/soloists/%s/" % self.slug
     
+    def search_result(self):
+        return self.__unicode__()
 
+    def type(self):
+        return "Soloist"

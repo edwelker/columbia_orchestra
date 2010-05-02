@@ -16,6 +16,7 @@ div.subpage { padding: 20px; }
 .vcalendar h3 { font-size: 2em; }
 p.dtstart, p.location, p.tickets { margin: 0;}
 .vevent { border-bottom: 1px solid #ccc; }
+.search table ul { list-style-type: none; }
 
 .offscreen { text-indent: -9999em; }
 .noborder { border: none; }

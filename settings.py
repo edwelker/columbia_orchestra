@@ -91,6 +91,7 @@ INSTALLED_APPS = (
     'orch.homepage_viewer',
     'django_extensions',
     'debug_toolbar',
+    'haystack',
 )
 
 from django.conf.global_settings import TEMPLATE_CONTEXT_PROCESSORS
@@ -111,3 +112,7 @@ DEBUG_TOOLBAR_PANELS = (
     'debug_toolbar.panels.cache.CacheDebugPanel',
     'debug_toolbar.panels.logger.LoggingPanel',
 )
+
+HAYSTACK_SITECONF = 'orch.search_sites' 
+HAYSTACK_SEARCH_ENGINE = 'whoosh'
+HAYSTACK_WHOOSH_PATH = '/home/ewelker/git_repos/columbia_orchestra/orch_index'

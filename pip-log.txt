@@ -373,3 +373,53 @@ Traceback (most recent call last):
   File "/home/ewelker/git_repos/col/lib/python2.6/site-packages/pip-0.6.3-py2.6.egg/pip/index.py", line 117, in find_requirement
     raise DistributionNotFound('No distributions at all found for %s' % req)
 DistributionNotFound: No distributions at all found for dateutil
+------------------------------------------------------------
+/home/ewelker/git_repos/col/bin/pip run on Sun May  2 17:29:40 2010
+Downloading/unpacking haystack
+  Getting page http://pypi.python.org/simple/haystack
+  Could not fetch URL http://pypi.python.org/simple/haystack: HTTP Error 404: Not Found
+  Will skip URL http://pypi.python.org/simple/haystack when looking for download links for haystack
+  Getting page http://pypi.python.org/simple/
+  URLs to search for versions for haystack:
+  * http://pypi.python.org/simple/haystack/
+  Getting page http://pypi.python.org/simple/haystack/
+  Could not fetch URL http://pypi.python.org/simple/haystack/: HTTP Error 404: Not Found
+  Will skip URL http://pypi.python.org/simple/haystack/ when looking for download links for haystack
+  Could not find any downloads that satisfy the requirement haystack
+No distributions at all found for haystack
+Exception information:
+Traceback (most recent call last):
+  File "/home/ewelker/git_repos/col/lib/python2.6/site-packages/pip-0.6.3-py2.6.egg/pip/basecommand.py", line 115, in main
+    self.run(options, args)
+  File "/home/ewelker/git_repos/col/lib/python2.6/site-packages/pip-0.6.3-py2.6.egg/pip/commands/install.py", line 155, in run
+    requirement_set.install_files(finder, force_root_egg_info=self.bundle, bundle=self.bundle)
+  File "/home/ewelker/git_repos/col/lib/python2.6/site-packages/pip-0.6.3-py2.6.egg/pip/req.py", line 823, in install_files
+    url = finder.find_requirement(req_to_install, upgrade=self.upgrade)
+  File "/home/ewelker/git_repos/col/lib/python2.6/site-packages/pip-0.6.3-py2.6.egg/pip/index.py", line 117, in find_requirement
+    raise DistributionNotFound('No distributions at all found for %s' % req)
+DistributionNotFound: No distributions at all found for haystack
+------------------------------------------------------------
+/home/ewelker/git_repos/col/bin/pip run on Sun May  2 17:33:17 2010
+Downloading/unpacking Haystack
+  Getting page http://pypi.python.org/simple/Haystack
+  Could not fetch URL http://pypi.python.org/simple/Haystack: HTTP Error 404: Not Found
+  Will skip URL http://pypi.python.org/simple/Haystack when looking for download links for Haystack
+  Getting page http://pypi.python.org/simple/
+  URLs to search for versions for Haystack:
+  * http://pypi.python.org/simple/Haystack/
+  Getting page http://pypi.python.org/simple/Haystack/
+  Could not fetch URL http://pypi.python.org/simple/Haystack/: HTTP Error 404: Not Found
+  Will skip URL http://pypi.python.org/simple/Haystack/ when looking for download links for Haystack
+  Could not find any downloads that satisfy the requirement Haystack
+No distributions at all found for Haystack
+Exception information:
+Traceback (most recent call last):
+  File "/home/ewelker/git_repos/col/lib/python2.6/site-packages/pip-0.6.3-py2.6.egg/pip/basecommand.py", line 115, in main
+    self.run(options, args)
+  File "/home/ewelker/git_repos/col/lib/python2.6/site-packages/pip-0.6.3-py2.6.egg/pip/commands/install.py", line 155, in run
+    requirement_set.install_files(finder, force_root_egg_info=self.bundle, bundle=self.bundle)
+  File "/home/ewelker/git_repos/col/lib/python2.6/site-packages/pip-0.6.3-py2.6.egg/pip/req.py", line 823, in install_files
+    url = finder.find_requirement(req_to_install, upgrade=self.upgrade)
+  File "/home/ewelker/git_repos/col/lib/python2.6/site-packages/pip-0.6.3-py2.6.egg/pip/index.py", line 117, in find_requirement
+    raise DistributionNotFound('No distributions at all found for %s' % req)
+DistributionNotFound: No distributions at all found for Haystack

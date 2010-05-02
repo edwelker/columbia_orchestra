@@ -54,6 +54,12 @@ class OrchestraMember(models.Model):
         else:
             n = self.withinstrument()
         return n
+    
+    def search_result(self):
+        return self.withinstrument()
+    
+    def type(self):
+        return "Orchestra Member"
 
     def get_absolute_url(self):
         return "/members/%s_%s/" % (self.first_name.lower(), self.last_name.lower())
