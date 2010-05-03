@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="eng">
+<head>
+	<title>Columbia Orchestra</title>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" href="styles.css"/>
+	<script type="text/javascript" src="jquery-1.4.2.min.js"></script>
+
+	<script type="text/javascript">
+
+$(document).ready(function(){
+
+	$("ul.subnav").parent().append("<span></span>"); //Only shows drop down trigger when js is enabled (Adds empty span tag after ul.subnav*)
+
+	$("ul.topnav li a").hover(function() { //When trigger is clicked...
+
+		//Following events are applied to the subnav itself (moving subnav up and down)
+		$(this).parent().find("ul.subnav").slideDown('fast').show(); //Drop down the subnav on click
+
+		$(this).parent().hover(function() {
+		}, function(){
+			$(this).parent().find("ul.subnav").slideUp('slow'); //When the mouse hovers out of the subnav, move it back up
+		});
+
+		//Following events are applied to the trigger (Hover events for the trigger)
+		}).hover(function() {
+			$(this).addClass("subhover"); //On hover over, add class "subhover"
+		}, function(){	//On Hover Out
+			$(this).removeClass("subhover"); //On hover out, remove class "subhover"
+	});
+
+});
+
+
+	</script>
+</head>
+<body>
+	<div class="header_bg">
+		<div class="header">
+			<h1><a class="offscreen" href="/">The Columbia Orchestra</a></h1>
+			<div class="search_area">
+				<input type="search"/>
+				<button name="Search">Search</button>
+			</div>
+		</div>
+	</div>
+	<div class="nav">
+		<div class="navwrap">
+			<ul>
+				<li>
+					<a href="#">Concerts & Tickets</a>
+					<ul>
+						<li><a href="#">Guest Artists</a></li>
+						<li><a href="#">Directions</a></li>
+						<li><a href="#">Tickets</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">Behind the Music</a>
+					<ul>
+						<li><a href="#">Audio</a></li>
+						<li><a href="#">Preludes</a></li>
+						<li><a href="#">Program Notes</a></li>
+						<li><a href="#">Program Note Archives</a><li>
+						<li><a href="#">YouTube</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">Support</a>
+					<ul>
+						<li><a href="#">Amazon</a></li>
+						<li><a href="#">Advertise</a></li>
+						<li><a href="#">Donate</a></li>
+						<li><a href="#">Volunteer</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">About Us</a>
+					<ul>
+						<li><a href="#">Composer</a></li>
+						<li><a href="#">Young Artist</a></li>
+						<li><a href="#">Members</a></li>
+						<li><a href="#">Mission</a></li>
+						<li><a href="#">History</a></li>
+						<li><a href="#">Mailing List</a></li>
+						<li><a href="#">Contact Us</a></li>
+						<li><a href="#">Auditions</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">Press Room</a>
+				</li>
+				<li>
+					<a href="#">Partners</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+		
+	<div class="main subpage">
+		<div class="content">
+			<h1>About the Columbia Orchestra</h1>
+			<h2>I can't even manually format a single page</h2>
+			
+			<p>This is going to be a paragraph of text that I use to show that this page can actually look like some sort of page.</p>
+	
+			<h3>Third type heading</h3>
+	
+			<!-- start pasted code -->
+
+<h2>Links to Local Organizations</h2>
+<p>
+<a href="http://www.symphony.org">American Symphony Orchestra League</a><br>
+<a href="http://welcome.to/CandlelightConcerts">Candlelight Concert Society</a><br>
+<a href="http://www.chesapeakeshakespeare.com/">Chesapeake Shakespeare Company</a><br>	
+<a href="http://www.incolumbia.com">Columbia Community Guide</a><br>		
+<a href="http://www.procantare.org/">Columbia Pro Cantare</a><br>
+<a href="http://www.cmcentermd.org">Community Music Center of Maryland</a><br>
+<a href="http://www.hocopolitso.org">HoCoPoLitSo</a><br>
+<a href="http://www.howardcc.edu">Howard Community College</a><br>
+<a href="http://www.hocoarts.org">Howard County Arts Council and Center for the Arts</a><br>
+<a href="http://www.howardcountyballet.org/">Howard County Ballet</a><br>
+<a href="http://www.howardchamber.com">Howard County Chamber of Commerce</a><br>
+<a href="http://www.howardcountyevents.com">Howard County Community Events</a><br>
+<a href="http://www.co.ho.md.us">Howard County Government</a><br>
+<a href="http://www.howa.lib.md.us">Howard County Library</a><br>
+<a href="http://www.visithowardcounty.com">Howard County Tourism Council</a><br>
+<a href="http://www.wbjc.com">WBJC (FM 91.5)</a><br>
+<a href="http://www.weta.org">WETA (FM 90.9, TV 26)</a><br>
+</p>
+			<!-- end pasted code -->
+	
+		</div>
+	</div>
+	
+	<div class="footer">
+		<div class="col">
+			<h2 class="footerlogo">
+				<span class="offscreen">Additional Info</span>
+			</h2>
+		</div>
+		<div class="col">
+			<p>The Columbia Orchestra<br/>
+			Howard County Center for the Arts<br/>
+			8510 High Ridge Road,<br/>
+			Ellicott City, MD 21043
+			</p>
+			<p>
+				Phone: 410-465-8777<br/>
+				Fax: 410-465-8778
+			</p>
+		</div>
+		<div class="col">
+			<ul>
+				<li><a href="#">Concerts & Tickets</a></li>
+				<li><a href="#">Behind the Music</a></li>
+				<li><a href="#">Support</a></li>
+				<li><a href="#">About Us</a></li>
+				<li><a href="#">Press Room</a></li>
+				<li><a href="#">Partners</a></li>
+			</ul>
+		</div>
+		<div class="col last">
+			<h3>For Members</h3>
+			<ul>
+				<li><a href="#">Schedule</a></li>
+				<li><a href="#">Locations</a></li>
+				<li><a href="#">Stuff from Jason</a></li>
+				<li><a href="#">Photos of the Orchestra</a></li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>
