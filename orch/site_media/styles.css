@@ -44,10 +44,10 @@ div.soloist img { float: left; margin-right: 1em; margin-bottom: 1em; }
 .nav ul ul li { display: block; float: none; z-index: 10; margin: .3em 0; }
 .nav ul ul li a { padding: .3em 1em; }
 .nav ul ul li a:hover { background-color: #FBBF13; background-color: rgba(251,191,19,.4); text-shadow: 3px 3px 6px rgba(0,0,0,.9); }
-.nav ul ul.menu_concerts { left: 2em; }
-.nav ul ul.menu_behind { left: 16em; }
-.nav ul ul.menu_support { left: 32.5em; }
-.nav ul ul.menu_about { left: 40em; }
+.nav ul ul.menu_concerts { left: 2.6em; }
+.nav ul ul.menu_behind { left: 14.8em; }
+.nav ul ul.menu_support { left: 32.8em; }
+.nav ul ul.menu_about { left: 39.6em; }
 
 .next_bg { background-color: #be9521; margin-bottom: 4em; }
 .next_concert { background-color: #fbbf13; position: relative; top: 15px; -moz-box-shadow: 5px 8px 8px #111; -webkit-box-shadow: 5px 8px 8px #111; box-shadow: 5px 8px 8px #111; overflow: auto; padding: 2em; }
