@@ -33,8 +33,8 @@ div.soloist img { float: left; margin-right: 1em; margin-bottom: 1em; }
 
 .search_area { position: absolute; right: 20px; top: 7.5em; }
 .search_area input, .search_area button { height: 2em; border: 0; margin:0; }
-.search_area  input { background-color: #c1cfcf; -moz-border-radius: 4px 0 0 4px; width: 13em;}
-.search_area button { background: transparent url(searchbg.png) repeat-x 0 0; -moz-border-radius: 0 4px 4px 0; height: 2.15em; position: relative; left: -.2em; top: .1em; color: #fff; font-weight:bold;}
+.search_area  input { background-color: #c1cfcf; -moz-border-radius: 4px 0 0 4px; width: 13em; height: 1.8em; padding: .3em 0 0 .3em;}
+.search_area button { background: transparent url(searchbg.png) repeat-x 0 0; -moz-border-radius: 0 4px 4px 0; height: 2.1em; position: relative; left: -.3em; top: .25em; color: #fff; font-weight:bold;}
 
 .nav { background-color: #333; height: 46px;  text-align: center; }
 .nav ul { margin:0;padding:0;list-style-type:none; position: relative; top: 12px; overflow:visible; }
@@ -44,10 +44,10 @@ div.soloist img { float: left; margin-right: 1em; margin-bottom: 1em; }
 .nav ul ul li { display: block; float: none; z-index: 10; margin: .3em 0; }
 .nav ul ul li a { padding: .3em 1em; }
 .nav ul ul li a:hover { background-color: #FBBF13; background-color: rgba(251,191,19,.4); text-shadow: 3px 3px 6px rgba(0,0,0,.9); }
-.nav ul ul.menu_concerts { left: .7em; }
+.nav ul ul.menu_concerts { left: 2em; }
 .nav ul ul.menu_behind { left: 16em; }
-.nav ul ul.menu_support { left: 36.4em; }
-.nav ul ul.menu_about { left: 47em; }
+.nav ul ul.menu_support { left: 32.5em; }
+.nav ul ul.menu_about { left: 40em; }
 
 .next_bg { background-color: #be9521; margin-bottom: 4em; }
 .next_concert { background-color: #fbbf13; position: relative; top: 15px; -moz-box-shadow: 5px 8px 8px #111; -webkit-box-shadow: 5px 8px 8px #111; box-shadow: 5px 8px 8px #111; overflow: auto; padding: 2em; }
