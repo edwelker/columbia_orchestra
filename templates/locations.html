@@ -14,10 +14,10 @@ Event Locations
 			<div class="street-address">{{ location.address }}</div>
 			<span class="locality">{{ location.city }}</span> <span class="region">{{ location.state }}</span>, <span class="postal-code">{{ location.zip }}</span>
 			<br/>
-		<a href="{{ location.url }}">Directions to {{ location.name }}</a>
+		<a href="{{ location.url }}">Google Maps directions to {{ location.name }}</a>
 		{% if location.alt_url %}
 		<br/>
-			<a href="{{ location.alt_url }}">Alternate directions</a>
+			<a href="{{ location.alt_url }}">Website directions</a>
 		{% endif %}
 		</div>
 	</div>

@@ -4,7 +4,7 @@ body { margin:0;padding:0;background-color:#333; font: 62.5%/1.4 arial, sans-ser
 .content { width: 75%; }
 .main div.wide { width: 100%;}
 div.subpage { padding: 20px; }
-.content p, .content ul, .concertInfo, .vcard { font-size: 1.4em; }
+.content p, .content ul, .concertInfo, .vcard, dl { font-size: 1.4em; }
 .concertInfo { margin-bottom: 1em; }
 .content h1 { font-size: 2.4em; /*background-color: #fbbf13; display: inline; padding: .2em 1em; -moz-box-shadow: 2px 2px 8px rgba(0,0,0,.5); -webkit-box-shadow: 5px 8px 8px rgba(0,0,0,.5); box-shadow: 5px 8px 8px rgba(0,0,0,.5); position: relative; top: -.25em; left: .5em; */ }
 .content h3 { font-size: 1.6em; font-weight: bold; }

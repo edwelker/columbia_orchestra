@@ -27,7 +27,7 @@ class Location(models.Model):
     city = models.CharField(max_length=60)
     state = models.CharField(max_length=50)
     zip = models.CharField(max_length=10)
-    url = models.URLField(help_text="Required. Google maps directions to the location. (Can use non-google maps directions, but it isn't recommended.)")
+    url = models.URLField(max_length=500, help_text="Required. Google maps directions to the location.")
     alt_url = models.URLField( blank=True, null=True, help_text="Optional. Alternate link to directions (like through an official website [the BSO's link to the Meyerhoff, etc.])")
     slug = models.SlugField(unique=True, help_text='Suggested value is automatically generated from location name. Must be unique.')
     
