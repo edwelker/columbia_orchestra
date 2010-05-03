@@ -56,6 +56,7 @@ class Event(models.Model):
     slug = models.SlugField(unique=True, help_text='Suggested value is automatically generated from event name. Must be unique.')
     soloists = models.ManyToManyField("Soloist", blank=True)
     image = ThumbnailImageField(blank=True,help_text="Not optional for primary events.",upload_to='images/events')
+    preconcert_discussion = models.OneToOneField('PreConcertDiscussion', blank=True, null=True)
     
     STATUS=(
             (1, "Primary"),
@@ -82,15 +83,16 @@ class Event(models.Model):
 
 
 class PreConcertDiscussion(models.Model):
-    event = models.ForeignKey(Event)
     time = models.TimeField()
     speaker = models.CharField(max_length=100)
-    talk_location = models.CharField(max_length=100, blank=True, null=True)
+    talk_location = models.CharField(max_length=200, help_text="Will be used in a sentence, '...at (time) in the (talk location).'")
+    sponsor = models.CharField(max_length=150, blank=True, null=True, help_text="Optional. When added will add 'Brought to you by (sponsor name)' line to the Pre-concert discussion mention.")
+    youtube_embed_code = models.TextField(blank=True, null=True, help_text="Just copy and paste the embed code from Youtube.")
     
     def __unicode__(self):
         return self.event.name
     
-
+    
 
 
         

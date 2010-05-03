@@ -1,5 +1,6 @@
 body { margin:0;padding:0;background-color:#333; font: 62.5%/1.4 arial, sans-serif; }
 .description h2, .description div, .main h2, .subpage h1 { font-family: Georgia, Cambria, "Times New Roman", Times, serif; }
+img { border: 0; }
 
 .content { width: 75%; }
 .main div.wide { width: 100%;}
@@ -17,6 +18,8 @@ div.subpage { padding: 20px; }
 p.dtstart, p.location, p.tickets { margin: 0;}
 .vevent { border-bottom: 1px solid #ccc; }
 .search table ul { list-style-type: none; }
+div.soloist { overflow: auto; clear: both; border-bottom: 1px solid #ccc; }
+div.soloist img { float: left; margin-right: 1em; margin-bottom: 1em; }
 
 .offscreen { text-indent: -9999em; }
 .noborder { border: none; }

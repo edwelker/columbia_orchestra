@@ -5,13 +5,21 @@
 	<h2>Season Soloists - {{ season.name }}</h2>
 	{% if soloists %}
 	{% for soloist in soloists %}
+	<div class="soloist">
+	    {% if soloist.image %}
+        <a href="{{soloist.get_absolute_url}}"><img src="/{{ soloist.image.thumb_url }}" alt="{{ soloist.name }}"/></a>
+        {% endif %}
+        
 		<h3><a href="{{ soloist.get_absolute_url }}">{{ soloist.name }}</a>, 
 		{{ soloist.instrument }}</h3>
-		<p>{{ soloist.work }} &mdash; 
+		<p>{{ soloist.work }} 
+        <br/>
+        Concert: 
 		{% for e in soloist.event_set.all %}
-		   <a href="{{e.get_absolute_url}}">{{ e.name }}</a>
+		   <a href="{{e.get_absolute_url}}">{{ e.name }}</a>, {{e.date|date:"l, F jS Y"}} 
 		{% endfor %}
 		</p>
+	</div>
 	{% endfor %}
 	{% else %}
 		<p>No soloists found for the current season.</p>

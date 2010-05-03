@@ -15,7 +15,9 @@
 			{% endif %}
 		</div>
 
-        <img src="/{{event.image.url}}" alt="Event promo image"/>
+        {% if event.image %}
+            <img src="/{{event.image.url}}" alt="Event promo image"/>
+        {% endif %}
         
 		{% if event.description %}
 			{{ event.description|safe }}

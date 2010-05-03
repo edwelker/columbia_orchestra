@@ -9,7 +9,7 @@
             </div>
             <div class="col last">
                 <p class="member">{{ member.fullmember }}</p>
-                {{ member.bio|safe|truncatewords_html:75 }}
+                {{ member.bio|safe|truncatewords_html:120 }}
                 <p><a href="{{ member.get_absolute_url }}">Read more about {{member.first_name}}...</a></p>
                 <p><a href="/members/">Meet more of the orchestra...</a></p>
             </div>
@@ -32,6 +32,22 @@
                 <div>{{ primary_event.date|date:"g:i a" }}, <a href="{{primary_event.location.get_absolute_url}}">{{primary_event.location}}</a></div>
                 <div class="conductor">Jason Love, conductor</div>
                 {{ primary_event.description|safe }}
+                
+                {% if primary_event.preconcert_discussion %}
+                {% with primary_event.preconcert_discussion as e %}
+                    <p class="preconcert">Enjoy a pre-concert discussion
+                    at 
+                    {{e.time|time:"g:i a"}} 
+                     with
+                    {{e.speaker}}
+                    in the 
+                    {{e.talk_location}}.</p>
+                    {% if e.sponsor %}
+                        <p>The pre-concert discussion is brought to you by {{e.sponsor}}.</p>
+                    {% endif %}
+                    </p>
+                {% endwith %}
+                {% endif %}
             </div>
     </div>
     {% else %}
