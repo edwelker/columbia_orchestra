@@ -5,16 +5,16 @@ img { border: 0; }
 .content { width: 75%; }
 .main div.wide { width: 100%;}
 div.subpage { padding: 20px; }
-.content p, .content ul, .concertInfo, .vcard, dl { font-size: 1.4em; }
+.content p, .content ul, .concertInfo, .vcard, dl { font-size: 1.3em; }
 .concertInfo { margin-bottom: 1em; }
-.content h1 { font-size: 2.4em; /*background-color: #fbbf13; display: inline; padding: .2em 1em; -moz-box-shadow: 2px 2px 8px rgba(0,0,0,.5); -webkit-box-shadow: 5px 8px 8px rgba(0,0,0,.5); box-shadow: 5px 8px 8px rgba(0,0,0,.5); position: relative; top: -.25em; left: .5em; */ }
-.content h3 { font-size: 1.6em; font-weight: bold; }
+.content h1 { font-size: 2.2em; /*background-color: #fbbf13; display: inline; padding: .2em 1em; -moz-box-shadow: 2px 2px 8px rgba(0,0,0,.5); -webkit-box-shadow: 5px 8px 8px rgba(0,0,0,.5); box-shadow: 5px 8px 8px rgba(0,0,0,.5); position: relative; top: -.25em; left: .5em; */ }
+.content h3 { font-size: 1.4em; font-weight: bold; }
 .member_detail img, .event_detail img { float: left; margin: 0 2em 2em 0; }
-.member_detail p:nth-of-type(1):first-letter, .event_detail p:nth-of-type(1):first-letter{ font-size: 2em; font-weight: bold; line-height: .6; }
+.member_detail p:nth-of-type(1):first-letter, .event_detail p:nth-of-type(1):first-letter{ font-size: 1.8em; font-weight: bold; line-height: .6; }
 .member_list .group { float: left; margin-right: 3em; }
-.member_list ul {list-style-type:none; font-size:1.4em; padding-left:1.5em; margin:.3em 0;}
+.member_list ul {list-style-type:none; font-size:1.3em; padding-left:1.5em; margin:.3em 0;}
 .member_list h3 { margin: .5em 0 .3em;}
-.vcalendar h3 { font-size: 2em; }
+.vcalendar h3 { font-size: 1.8em; }
 p.dtstart, p.location, p.tickets { margin: 0;}
 .vevent { border-bottom: 1px solid #ccc; }
 .search table ul { list-style-type: none; }
@@ -24,7 +24,7 @@ div.soloist img { float: left; margin-right: 1em; margin-bottom: 1em; }
 .offscreen { text-indent: -9999em; }
 .noborder { border: none; }
 
-.header, .main, .next_concert, .footer , .navwrap{ width: 1000px; margin:0 auto; padding: 0 20px; }
+.header, .main, .next_concert, .footer , .navwrap{ width: 960px; margin:0 auto; padding: 0 20px; }
 
 .header_bg { height: 127px; background: transparent url(headerbg.png) repeat-x 0 0; }
 .header h1, .description h2, .footer h2.footerlogo { margin-top:0;}
@@ -40,7 +40,7 @@ div.soloist img { float: left; margin-right: 1em; margin-bottom: 1em; }
 .nav ul { margin:0;padding:0;list-style-type:none; position: relative; top: 12px; overflow:visible; }
 .nav ul li { display: inline;  margin-right: 40px; float: left;}
 .nav ul ul  { display: none; position: absolute; background-color:#333; top:1.7em; padding:1.3em 0 .5em 0; z-index:10;} 
-.nav ul li a { color: #fff;  text-transform: uppercase; text-decoration: none; font-size: 1.5em;}
+.nav ul li a { color: #fff;  text-transform: uppercase; text-decoration: none; font-size: 1.3em;}
 .nav ul ul li { display: block; float: none; z-index: 10; margin: .3em 0; }
 .nav ul ul li a { padding: .3em 1em; }
 .nav ul ul li a:hover { background-color: #FBBF13; background-color: rgba(251,191,19,.4); text-shadow: 3px 3px 6px rgba(0,0,0,.9); }
@@ -50,20 +50,20 @@ div.soloist img { float: left; margin-right: 1em; margin-bottom: 1em; }
 .nav ul ul.menu_about { left: 47em; }
 
 .next_bg { background-color: #be9521; margin-bottom: 4em; }
-.next_concert { background-color: #fbbf13; position: relative; top: 15px; -moz-box-shadow: 5px 8px 8px #111; -webkit-box-shadow: 5px 8px 8px #111; box-shadow: 5px 8px 8px #111; overflow: auto; padding: 20px; }
-.image img { width: 460px; border: 10px solid white; -moz-border-radius: 0px; -moz-box-shadow: 4px 4px 8px rgba(0,0,0,.5); float: left;}
-.next_concert .description { float: right; width: 490px; z-index:2; }
+.next_concert { background-color: #fbbf13; position: relative; top: 15px; -moz-box-shadow: 5px 8px 8px #111; -webkit-box-shadow: 5px 8px 8px #111; box-shadow: 5px 8px 8px #111; overflow: auto; padding: 2em; }
+.image img { width: 45em; border: 10px solid white; -moz-border-radius: 0px; -moz-box-shadow: 4px 4px 8px rgba(0,0,0,.5); float: left;}
+.next_concert .description { float: right; width: 47em; z-index:2; }
 
 
-.description h2 { font-size: 3em; text-shadow: 3px 3px 6px rgba(0,0,0,.4); margin-bottom: .4666em; padding-bottom: .4666em; border-bottom: 1px solid #9d7a17; border-bottom: 1px solid rgba(0,0,0,.3) }
-.description div { font-size: 1.8em; }
+.description h2 { font-size: 2.4em; text-shadow: 3px 3px 6px rgba(0,0,0,.4); margin-bottom: .4666em; padding-bottom: .4666em; border-bottom: 1px solid #9d7a17; border-bottom: 1px solid rgba(0,0,0,.3) }
+.description div { font-size: 1.4em; }
 .description div.conductor { font-style: italic; }
-.description p { font-size: 1.4em; }
-.description p.tickets { font-size: 1.2em; padding-top: 1.2em; border-top: 1px solid #9d7a17; border-top: 1px solid rgba(0,0,0,.3) }
+.description p { font-size: 1.3em; }
+.description p.tickets { font-size: 1.1em; padding-top: 1.2em; border-top: 1px solid #9d7a17; border-top: 1px solid rgba(0,0,0,.3) }
 .description a { color:#000; text-decoration: none; border-bottom: 1px dotted #000;}
 .description a:hover { color: #008; border-bottom: 1px solid #008;}
 
-.col p, .col ul li a { font-size: 1.4em; }
+.col p, .col ul li a { font-size: 1.3em; }
 
 
 .main { background-color: #fff; margin: 0 auto; border: 1px #efefef; overflow: auto; }
@@ -71,10 +71,10 @@ div.soloist img { float: left; margin-right: 1em; margin-bottom: 1em; }
 .twocol { width: 49%; margin-right: 2%; float: left; }
 .twocol .col { margin-right: 4%; width: 48%; float: left; }
 .twocol div.last, div.last  { margin:0;}
-.main  h2 { color: #054f49; text-transform: uppercase; font-size: 1.8em; font-weight: normal; border-bottom: 1px solid #ccc; padding-bottom: .4em; }
+.main  h2 { color: #054f49; text-transform: uppercase; font-size: 1.6em; font-weight: normal; border-bottom: 1px solid #ccc; padding-bottom: .4em; }
 .main h2 a { color: #054f49; text-decoration: none;  padding-top: .2em; }
 .main h2 a:hover { border-bottom: 1px dotted #054f49; }
-.main .member { font-size: 1.6em; font-weight: bold; margin-top:-.25em;}
+.main .member { font-size: 1.4em; font-weight: bold; margin-top:-.25em;}
  
 .main  .social { padding-left: 2em; text-transform: capitalize; margin-bottom: .5em; }
 .facebook { background: transparent url(facebook.png) no-repeat 0 0; }
@@ -89,7 +89,7 @@ div.soloist img { float: left; margin-right: 1em; margin-bottom: 1em; }
 .footer span.offscreen { background: transparent url(footlogo.png) no-repeat 0 0; display: block; width: 241px; height: 71px; margin-top: 1em;  }
 .footer ul { margin:1em 0 0 0;padding:0;list-style-type:none;}
 .footer ul li a { color: #fff; text-decoration: none; border-bottom: 1px dotted #fff; }
-.footer h3 { font-size: 1.4em; margin-top: .7142em; }
+.footer h3 { font-size: 1.3em; margin-top: .7142em; }
 
 
 
