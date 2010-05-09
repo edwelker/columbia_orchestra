@@ -14,7 +14,17 @@
             <div class="vevent">
                 
                 <h4 class="summary">{{ event.name }}</h4>
-                <p class="dtstart" title='{{ event.date|date:"Y-m-d\TH:i:s" }}-05:00'>{{ event.date|date:"l, F jS Y" }} - {{ event.date|date:"g:i a" }}</p>
+                <p class="dtstart" title='{{ event.date|date:"Y-m-d\TH:i:s" }}-05:00'>{{ event.date|date:"l, F jS Y" }} - 
+                {{ event.date|date:"g:i a" }}
+                {% if event.alt_time %}
+                    &amp; {{event.alt_time|time:"g:i a"}}
+		        {% endif %}
+		        </p>
+                {% if event.alt_date %}
+			        <p class="rdate" title='{{ event.alt_date|date:"Y-m-d\TH:i:s" }}-05:00'>
+			        {{ event.alt_date|date:"l, F jS Y" }} - {{event.alt_date|date:"g:i a"}}
+			        </p>
+		        {% endif %}
                 <p class="location"><a href="{{ event.location.get_absolute_url }}">{{ event.location }}</a></p>
                 {% if event.ticket_link %}
                 <p class="tickets"><a href="{{ event.ticket_link }}">Click here to purchase tickets</a></p>
@@ -38,7 +48,17 @@
             <div class="vevent">
                 
                 <h4 class="summary">{{ event.name }}</h4>
-                <p class="dtstart" title='{{ event.date|date:"Y-m-d\TH:i:s" }}-05:00'>{{ event.date|date:"l, F jS Y" }} - {{ event.date|date:"g:i a" }}</p>
+                <p class="dtstart" title='{{ event.date|date:"Y-m-d\TH:i:s" }}-05:00'>{{ event.date|date:"l, F jS Y" }} - 
+                {{ event.date|date:"g:i a" }}
+                {% if event.alt_time %}
+                    &amp; {{event.alt_time|time:"g:i a"}}
+		        {% endif %}
+		        </p>
+                {% if event.alt_date %}
+			        <p class="rdate" title='{{ event.alt_date|date:"Y-m-d\TH:i:s" }}-05:00'>
+			        {{ event.alt_date|date:"l, F jS Y" }} - {{event.alt_date|date:"g:i a"}}
+			        </p>
+		        {% endif %}
                 <p class="location"><a href="{{ event.location.get_absolute_url }}">{{ event.location }}</a></p>
                 {% if event.ticket_link %}
                 <p class="tickets"><a href="{{ event.ticket_link }}">Click here to purchase tickets</a></p>

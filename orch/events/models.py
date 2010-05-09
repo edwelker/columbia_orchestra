@@ -49,6 +49,8 @@ class Location(models.Model):
 class Event(models.Model):
     name = models.CharField(max_length=100, help_text="Name of the Event. Must be unique, even across seasons (so if you're doing 'Holiday Concert', make it '2009 Holiday Concert', etc.)")
     date = models.DateTimeField()
+    alt_time = models.TimeField(blank=True,null=True, verbose_name="Alternate Time", help_text="Optional")
+    alt_date = models.DateTimeField(blank=True, null=True, verbose_name="Alternate Date", help_text="Optional")
     location = models.ForeignKey(Location)
     ticket_link = models.URLField( blank=True, null=True, help_text="Link to purchase tickets online.")
     season = models.ForeignKey(Season)
@@ -59,8 +61,8 @@ class Event(models.Model):
     preconcert_discussion = models.OneToOneField('PreConcertDiscussion', blank=True, null=True)
     
     STATUS=(
-            (1, "Primary"),
-            (2, "Secondary"),
+            (1, "Orchestra"),
+            (2, "Chamber"),
             )
     
     status = models.IntegerField(choices=STATUS, default=1, help_text="Primary events are major and require an image as they will always appear first on the homepage. Secondary include chamber concerts, etc.")

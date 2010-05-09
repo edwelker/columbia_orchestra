@@ -29,7 +29,9 @@
             <div class="description">
                 <h2>{{primary_event.name}}</h2>
                 <div>{{ primary_event.date|date:"l, F jS Y" }}</div>
-                <div>{{ primary_event.date|date:"g:i a" }}, <a href="{{primary_event.location.get_absolute_url}}">{{primary_event.location}}</a></div>
+                <div>{{ primary_event.date|date:"g:i a" }}
+                {%if primary_event.alt_time%} &amp; {{primary_event.alt_time|time:"g:i a"}}{%endif%}, 
+                <a href="{{primary_event.location.get_absolute_url}}">{{primary_event.location}}</a></div>
                 <div class="conductor">Jason Love, conductor</div>
                 {{ primary_event.description|safe }}
                 
