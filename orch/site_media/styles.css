@@ -76,7 +76,7 @@ div.soloist img { float: left; margin-right: 1em; margin-bottom: 1em; }
 .main h2 a:hover { border-bottom: 1px dotted #054f49; }
 .main .member { font-size: 1.4em; font-weight: bold; margin-top:-.25em;}
  
-.main  .social { padding-left: 2em; text-transform: capitalize; margin-bottom: .5em; }
+.main  .social { padding-left: 2em; text-transform: capitalize; margin-bottom: .5em; padding-bottom: .2em; }
 .facebook { background: transparent url(facebook.png) no-repeat 0 0; }
 .twitter { background: transparent url(twitter.png) no-repeat 0 0; }
 .youtube { background: transparent url(youtube.png) no-repeat 0 0; }
