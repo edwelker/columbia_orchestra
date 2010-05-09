@@ -17,6 +17,7 @@ class EventAdmin(admin.ModelAdmin):
     prepopulated_fields = {'slug': ['name']}
     list_display = ('name', 'date', 'location', 'season')
     list_filter = ('location', 'season')
+    ordering = ['-date']
     
 
 admin.site.register(Event, EventAdmin)

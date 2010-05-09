@@ -58,8 +58,8 @@ div.soloist img { float: left; margin-right: 1em; margin-bottom: 1em; }
 .next_concert .description { float: right; width: 47em; z-index:2; }
 
 
-.description h2 { font-size: 2.4em; text-shadow: 3px 3px 6px rgba(0,0,0,.4); margin-bottom: .4666em; padding-bottom: .4666em; border-bottom: 1px solid #9d7a17; border-bottom: 1px solid rgba(0,0,0,.3) }
-.description div { font-size: 1.4em; }
+.description h2 { font-size: 2.6em; text-shadow: 3px 3px 6px rgba(0,0,0,.4); margin-bottom: .4666em; padding-bottom: .4666em; border-bottom: 1px solid #9d7a17; border-bottom: 1px solid rgba(0,0,0,.3) }
+.description div { font-size: 1.6em; }
 .description div.conductor { font-style: italic; }
 .description p { font-size: 1.3em; }
 .description p.tickets { font-size: 1.1em; padding-top: 1.2em; border-top: 1px solid #9d7a17; border-top: 1px solid rgba(0,0,0,.3) }
