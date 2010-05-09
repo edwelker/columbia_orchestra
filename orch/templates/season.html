@@ -4,13 +4,16 @@
 
 {% block content %}
 <div class="content">
-    {% if season %}
+    {% if seasonname %}
         <h2>{{ seasonname }}</h2>
         <div class="vcalendar">
-            {% for event in season %}
+        
+            {% if future %}
+            <h3 class="future">Future events</h3>
+            {% for event in future %}
             <div class="vevent">
                 
-                <h3 class="summary">{{ event.name }}</h3>
+                <h4 class="summary">{{ event.name }}</h4>
                 <p class="dtstart" title='{{ event.date|date:"Y-m-d\TH:i:s" }}-05:00'>{{ event.date|date:"l, F jS Y" }} - {{ event.date|date:"g:i a" }}</p>
                 <p class="location"><a href="{{ event.location.get_absolute_url }}">{{ event.location }}</a></p>
                 {% if event.ticket_link %}
@@ -18,7 +21,7 @@
                 {% endif %}
                 {% if event.soloists %}
                     {% for s in event.soloists.all %}
-                        <p class="soloist"><a href="{{s.get_absolute_url}}">{{s.name}}</a> &mdash; {{s.work}}</p>
+                        <p class="soloist"><a href="{{s.get_absolute_url}}">{{s.name}}</a>{%if s.work%} &mdash; {{s.work}}{%endif%}</p>
                     {% endfor %}
                 {% endif %}
                 
@@ -27,6 +30,31 @@
                 {% endif %}
             </div>
             {% endfor %}
+            {% endif %}
+            
+            {% if past %}
+            <h3 class="past">Past events</h3>
+            {% for event in past %}
+            <div class="vevent">
+                
+                <h4 class="summary">{{ event.name }}</h4>
+                <p class="dtstart" title='{{ event.date|date:"Y-m-d\TH:i:s" }}-05:00'>{{ event.date|date:"l, F jS Y" }} - {{ event.date|date:"g:i a" }}</p>
+                <p class="location"><a href="{{ event.location.get_absolute_url }}">{{ event.location }}</a></p>
+                {% if event.ticket_link %}
+                <p class="tickets"><a href="{{ event.ticket_link }}">Click here to purchase tickets</a></p>
+                {% endif %}
+                {% if event.soloists %}
+                    {% for s in event.soloists.all %}
+                        <p class="soloist"><a href="{{s.get_absolute_url}}">{{s.name}}</a>{%if s.work%} &mdash; {{s.work}}{%endif%}</p>
+                    {% endfor %}
+                {% endif %}
+                
+                {% if event.description %}
+                    {{ event.description|safe }}
+                {% endif %}
+            </div>
+            {% endfor %}
+            {% endif %}
         </div>
     {% else %}
         <h2>No Seasons Found</h2>
